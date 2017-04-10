@@ -1,0 +1,290 @@
+<div class="formData-inner">
+	<form id="applyData-form" style="width: 75%;"  onsubmit="return false;">
+		<div class="form-condition">
+			<!-- Your contact details -->
+			<div class="clearfix details-parts">
+				<h2 class="form-header">
+					<span>1</span><label>{contact}</label>
+				</h2>
+				<div class="form-inline">
+					<label class="form-group js-numpad" for="mobileNumber">
+						<label class="label" for="mobileNumber">{number}</label> <input type="text"
+																						class="form-text js-inputNum validate[required,custom[phone]]" id="mobileNumber" type="number" autocomplete="off" maxlength="11" placeholder="{inputPlaceholder}" value="13988889999"/>
+					</label>
+					<label class="form-group" for="email">
+						<label class="label" for="email">{Email}</label> <input style="width:550px;" type="text"
+																				class="form-text validate[required,custom[email]]" id="email" autocomplete="off" maxlength="34" placeholder="{inputPlaceholder}" value="china@china.com"/>
+					</label>
+				</div>
+			</div>
+
+			<!-- Your personal details -->
+			<div class="clearfix details-parts">
+				<h2 class="form-header">
+					<span>2</span><label>{personal}</label>
+				</h2>
+				<div class="form-inline">
+
+					<label class="form-group addressAlert" >
+						<label class="label" >{Resident}</label>
+						<!-- <span class="form-text" id="resident"></span> -->
+						<span class="form-textarea" id="resident" style="text-align: right;width:550px;"></span>
+						<!--<textarea type="text" class="form-textarea validate[required]" id="resident" maxlength="200" placeholder="{inputPlaceholder}" readonly unselectable="on"></textarea>-->
+					</label>
+
+					<label class="form-group" for="postalCode">
+						<label class="label" for="postalCode">{PostalCode}</label> <input type="text"
+																						  class="form-text validate[required,custom[postal]]" id="postalCode" autocomplete="off" maxlength="6" placeholder="{inputPlaceholder}" value="710065"/>
+					</label>
+
+
+
+					<div class="form-group row-line">
+						<label class="label label-inline">{want}</label>
+						<div class="select-box fr" id="anotherAddress">
+							<label class="select-btn"> <input type="radio" name="isAnotherAddress" />
+								<div class="checkbox">{Yes}</div>
+							</label>
+							<label class="select-btn"> <input type="radio" name="isAnotherAddress" checked />
+								<div class="checkbox">{No}</div>
+							</label>
+						</div>
+						<div class="formError" style="display:none;top:0;" id="address-val">
+							<div class="formErrorContent">* {requiredField}</div>
+							<div class="formErrorArrow"></div>
+						</div>
+					</div>
+
+
+					<div class="form-group form-group2 addressAlert" id="js-birth-country">
+						<div class="form-group addressAlert" style="width: 51%;margin-top:0" id="city">
+							<label class="label" for="jsBirthCountry">{City}</label>
+							<input type="text"  class="form-text3 backgc validate[required]" id="jsBirthCountry" maxlength="50" placeholder="{selectPlaceholder}"/>
+						</div>
+						<label class="form-group label-inline2" for="communicationCode" style="width: 45.3%;margin-top:0" id="postal">
+							<label class="label" for="communicationCode">{PostalCode2}</label>
+							<input type="text" class="form-text2 validate[required,custom[postal]]" id="communicationCode" autocomplete="off" maxlength="6" placeholder="{inputPlaceholder}"/>
+						</label>
+						<label class=" form-group addressAlert"
+							   id="correspondence-address-details" for="correspondenceAddressDetails" style="margin-top:0">
+							<label class="label" for="correspondenceAddressDetails">{details}</label>
+							<textarea class="form-textarea2 validate[required]" id="correspondenceAddressDetails" maxlength="240" placeholder="{inputPlaceholder}"></textarea>
+						</label>
+					</div>
+
+					<!--<div class="form-group addressAlert" id="js-birth-country" for="jsBirthCountry">-->
+						<!--<label class="label" for="jsBirthCountry">{Correspondence}</label> <input-->
+							<!--type="text" class="form-text validate[required]" id="jsBirthCountry" maxlength="50" placeholder="{selectPlaceholder}"/>-->
+					<!--</div>-->
+
+
+					<!--<label class="form-group addressAlert"-->
+						   <!--id="correspondence-address-details" for="correspondenceAddressDetails">-->
+						<!--<label class="label" for="correspondenceAddressDetails">{details}</label>-->
+						<!--<textarea class="form-textarea validate[required]" id="correspondenceAddressDetails" maxlength="300" placeholder="{inputPlaceholder}"></textarea>-->
+					<!--</label>-->
+				</div>
+			</div>
+			<!-- Your employment details -->
+			<div class="clearfix details-parts">
+				<h2 class="form-header">
+					<span>3</span><label>{employment}</label>
+				</h2>
+				<div class="form-inline">
+					<label class="form-group" data-for="js-empSituation" for="employmentSituation">
+						<label class="label" for="employmentSituation">{situation}</label> <input
+							type="text" class="form-text validate[required]"
+							id="employmentSituation" data-code="fullTime" readonly placeholder="{selectPlaceholder}" unselectable="on" value="fullTime"/>
+					</label>
+					<div class="form-group alert-select-box" id="js-empSituation">
+						<div class="select-boxt">
+							<div class="select-box-icon"></div>
+							<div class="two-btn">
+								<label class="select-btn"> <input type="radio" data-code="fullTime"
+																  name="situation">
+									<div class="checkbox">{full}</div>
+								</label> <label class="select-btn"> <input type="radio" data-code="partTime"
+																		   name="situation">
+								<div class="checkbox">{part}</div>
+							</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn"> <input type="radio" data-code="notTime"
+																  name="situation">
+									<div class="checkbox">{Not}</div>
+								</label> <label class="select-btn"> <input type="radio" data-code="selfTime"
+																		   name="situation">
+								<div class="checkbox">{selfEmployed}</div>
+							</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn"> <input type="radio" data-code="studentTime"
+																  name="situation">
+									<div class="checkbox">{Student}</div>
+								</label> <label class="select-btn"> <input type="radio" data-code="retriedTime"
+																		   name="situation">
+								<div class="checkbox">{Retired}</div>
+							</label>
+							</div>
+						</div>
+					</div>
+					<label class="form-group" for="employerName">
+						<label class="label" for="employerName">{Employer}</label>
+						<textarea class="form-textarea validate[required,custom[employerName]]" id="employerName" maxlength="240" placeholder="{inputPlaceholder}"/> sun</textarea>
+					</label>
+				</div>
+			</div>
+			<!-- Your financialDetails -->
+			<div class="clearfix details-parts">
+				<h2 class="form-header">
+					<span>4</span><label>{financial}</label>
+				</h2>
+				<div class="form-inline">
+					<label class="form-group" data-for="js-income" for="income">
+						<label class="label" for="income">{What}</label> <input
+							type="text" class="form-text validate[required]" placeholder="{selectPlaceholder}"
+							id="income" data-code="10" value=">= 200,000" readonly unselectable="on"/>
+					</label>
+					<div class="form-group alert-select-box" id="js-income">
+						<div class="select-boxt">
+							<div class="select-box-icon"></div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" data-code="10" value="> = 200,000" name="income1">
+									<div class="checkbox">&gt;= 200,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" name="income1" value={ZERO} data-code="00">
+									<div class="checkbox">{ZERO}</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="< 3,000" name="income1" data-code="01">
+									<div class="checkbox">&lt; 3,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="3,000 - < 5,000" name="income1" data-code="02">
+									<div class="checkbox">3,000 -&lt; 5,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="5,000 - < 8,000" name="income1" data-code="03">
+									<div class="checkbox">5,000 -&lt; 8,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="8,000 - < 10,000" name="income1" data-code="04">
+									<div class="checkbox">8,000 -&lt; 10,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="8,000 - < 10,000" name="income1" data-code="05">
+									<div class="checkbox">10,000 -&lt; 20,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="20,000 - < 30,000" name="income1" data-code="06">
+									<div class="checkbox">20,000 -&lt; 30,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="30,000 - < 50,000" name="income1" data-code="07">
+									<div class="checkbox">30,000 -&lt; 50,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="50,000 - < 100,000" name="income1" data-code="08">
+									<div class="checkbox">50,000 -&lt; 100,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="100,000 -< 200,000" name="income1" data-code="09">
+									<div class="checkbox">100,000 -&lt; 200,000</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<label class="form-group" data-for="js-otherIncome" for="otherIncome">
+						<label class="label1 label-inline" for="otherIncome">{gross} </label> <input
+							type="text" class="form-text validate[required]" id="otherIncome"
+							placeholder="{selectPlaceholder}"  value=">= 200,000" data-code="10" readonly unselectable="on"/>
+					</label>
+					<div class="form-group alert-select-box" id="js-otherIncome">
+						<div class="select-boxt">
+							<div class="select-box-icon"></div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="> = 200,000" name="income" data-code="10">
+									<div class="checkbox">&gt;= 200,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" name="income" value={ZERO} data-code="00">
+									<div class="checkbox">{ZERO}</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="< 3,000" name="income" data-code="01">
+									<div class="checkbox">&lt; 3,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="3,000 - < 5,000" name="income" data-code="02">
+									<div class="checkbox">3,000 -&lt; 5,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="5,000 - < 8,000" name="income" data-code="03">
+									<div class="checkbox">5,000 -&lt; 8,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="8,000 - < 10,000" name="income" data-code="04">
+									<div class="checkbox">8,000 -&lt; 10,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="8,000 - < 10,000" name="income" data-code="05">
+									<div class="checkbox">10,000 -&lt; 20,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="20,000 - < 30,000" name="income" data-code="06">
+									<div class="checkbox">20,000 -&lt; 30,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="30,000 - < 50,000" name="income" data-code="07">
+									<div class="checkbox">30,000 -&lt; 50,000</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" value="50,000 - < 100,000" name="income" data-code="08">
+									<div class="checkbox">50,000 -&lt; 100,000</div>
+								</label>
+							</div>
+							<div class="two-btn">
+								<label class="select-btn">
+									<input type="radio" value="100,000 -< 200,000" name="income" data-code="09">
+									<div class="checkbox">100,000 -&lt; 200,000</div>
+								</label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<a class="btns exit" id="js-apply-data-exit">
+			<span>{exit}</span>
+			<i></i>
+		</a>
+
+		<button type="button" class="btns next" id="applyData-next">
+			<span>{continue}</span>
+			<i></i>
+		</button>
+	</form>
+</div>

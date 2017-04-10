@@ -1,0 +1,11 @@
+/*QR*/
+.img{width: 75%;height: 356px;overflow: hidden; position:absolute;top:0;border-top-left-radius: 8px;border-top-right-radius: 8px; background: url(../img/mobileBanking/mobileBanking.jpg) no-repeat;background-size: 100%;}
+.img-title{width:100%;height:90px;position:relative;background:rgba(29,38,45,0.6);top:266px;}
+.img-title span{position: absolute;left:72px;line-height:90px;font-size:3em;color:#fff;margin-left:12px;}
+.QR .QR-title{padding-top: 406px;color:#333; font-size:30px; line-height:34px}
+.QR .QR-app{padding-top:32px; text-align:center;margin-right:31px;}
+.QR .QR-app .app-img{ width:130px; display: inline-block;}
+.QR .QR-app .app-img img{ width:100%}
+.QR .QR-app .ml212{margin-left:212px;}
+.QR-footer{font-size:30px;margin-top:53px;}
+.QR-footer a{text-decoration: underline;color:blue;}

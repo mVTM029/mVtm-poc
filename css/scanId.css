@@ -1,0 +1,8 @@
+/*scanId*/
+
+.scanId{height:640px;width:100%;margin-top:-5%;text-align:center}
+.scanId-title{width:100%;text-align:center;color:#fff;padding-top:20px}
+.scanId-title .take-paper{ font-size: 36px;line-height:54px;font-weight:600}
+.scanId-title .reminder{margin-top:20px;font-size:26px;color:#d7d8d6}
+
+

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/*takeIdCard CSS*/
+.take-IdCard{height:640px;width:100%;margin-top:-5%;text-align:center;}
+.take-IdCard-title{width:100%;text-align:center;color:#fff;padding-top:20px}
+.take-IdCard .take-paper{font-size:30px;line-height:30px;font-weight:600;color: #ffffff;}
+.take-IdCard .reminder{margin-top:20px;font-size:30px;color:#ffffff;}
+

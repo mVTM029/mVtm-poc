@@ -1,0 +1,42 @@
+/*applyData*/
+
+.alert-select-box{display:none;}
+.alert-select-box .select-boxt{padding:0;padding-top: 20px;width:100%;}
+.select-box-icon{width:0; height:0; border-width:17px 13px; border-style:solid; border-color:transparent transparent #fff transparent; position:absolute; top:-33px; left:50%; margin-left:-20px;}
+.showTop{position:relative; z-index: 300;}
+.count{height:500px;overflow-y:auto;overflow-x:hidden;}
+.two-btn .select-btn{float:left;width:44.6%;height:60px;line-height: 60px;}
+.two-btn .select-btn:nth-child(odd){margin:0;margin-left:25px;margin-bottom:2.2%;}
+/* .two-btn .select-btn:nth-child(even){margin:2.2% 4.3%;margin-top:0;} */
+.two-btn .select-btn .checkbox{width:100%;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+.main-container .formData{position:absolute; width:100%;height:97%; z-index:2; overflow:hidden; display:none}
+#resident{
+    cursor: default;
+}
+#employmentSituation,#income,#otherIncome{
+    cursor:pointer;
+}
+.form-inline .form-group .label-inline2{ margin-left:20px; line-height: 80px; font-size: 28px;display: inline-block;}
+.form-inline .form-group .form-textarea2{float: left;width: 95%; padding:0 20px;line-height:28px;height:58px; color: #333; font-size: 26px;text-align: left;overflow:hidden;}
+.form-inline .form-group .form-text2{float: right;padding: 20px 42px 20px 0;width: 206px; line-height:40px; color: #333;  font-size: 26px;text-align: right; }
+.form-inline .form-group .form-text3{
+    margin-top:5px;
+    float: right;
+    padding: 15px 0 20px 0;
+    width: 345px;
+    line-height:40px;
+    color: #333;
+    font-size: 26px;
+    text-align: center;
+}
+.backgc{
+    background: #EDEDED;
+}
+.form-inline .form-group2{margin-top: 5px;}
+#js-birth-country #city .formError,#js-birth-country #postal .formError{
+    left:516px !important;
+}
+
+.form-inline .select-btn .radiobox,.form-inline .select-btn .btnCheckbox{  width: 100%; height: 60px;  background: #EDEDED;line-height: 60px;  color: #333; font-size: 26px;text-align: center; cursor: pointer;}
+.form-inline .select-btn .radiobox,.form-inline .select-btn .btnChecked{width: 100%; height: 60px;  line-height: 60px;   font-size: 26px;text-align: center; cursor: pointer;color: #fff; background:#008580 url(../img/common/checked.png) 12px 18px no-repeat;}
+.noclick:after{ content:""; display:block; position:absolute; width:100%; height:100%; z-index:999; }

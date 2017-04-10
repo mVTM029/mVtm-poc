@@ -1,0 +1,44 @@
+
+.cancel-img-d{
+    position:absolute;
+    left:32%;
+    margin-top:80px;
+}
+
+.cancel-img1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.cancel-img2 {
+    position: absolute;
+    z-index: 2;
+    left: 38px;
+    top: 32px;
+}
+
+.cancel-img3{
+    position: absolute;
+    z-index: 2;
+    left:115px;
+    top:111px;
+}
+
+.transactionCancel-container{
+    width:100%;
+    text-align:center;
+    color:#666666;
+    padding-top:20px;
+    position:relative;
+    margin: 41% auto;
+}
+.transactionCancel-container .take-paper{
+    font-size: 36px;line-height:95px;font-weight:600
+}
+.transactionCancel-container .reminder{
+    margin-top:20px;font-size:26px;color:#ADADAD;line-height: 50px;
+}
+.transaction-timeout{
+    top:0 !important;
+    height:190px;
+}

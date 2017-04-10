@@ -1,0 +1,12 @@
+/*tokenDemandChoice*/
+#tokenDemandContainer{height:100%}
+#imgContainer{text-align: center;padding: 52px 0;}
+#contentContainer{padding: 30px 75px;background: #fff;margin: 30px 50px;border-radius: 5px;border:1px solid #000;}
+#contentContainer #topTip{font-size: 20px;}
+#bottomTip{font-size: 30px;text-align: center;margin-top: 25px;color:#000000;}
+#tokenDemandChoice-yes{bottom: 50px;right: 52px;background: rgba(255, 205, 0, 1.0);box-shadow: 0 0 10px rgba(255, 205, 0, 1.0);border-radius: 4px;}
+#tokenDemandChoice-no{bottom: 160px;right: 52px;border: 1px solid rgba(242, 242, 242,0.8);box-shadow: 0 0 10px #74787b;background:rgba(242, 242, 242,0.8);border-radius: 4px;}
+.warning{width:872px;height:70px;line-height:70px;background:#fff;margin:0 auto;text-align: center;box-shadow: 0 0 10px rgba(255, 205, 0, 0.8);}
+.warning p{font-size:20px;}
+
+

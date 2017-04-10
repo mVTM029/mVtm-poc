@@ -1,0 +1,6 @@
+/*forceConnect*/
+.connecting{height: 640px; width: 100%; margin-top: -50px; text-align:center;/* background: url(../img/animation/connecting-remote-teller.gif) center no-repeat; */}
+.connectedTeller .connected-img{padding-top: 178px;width: 100%; height: 645px; text-align: center; box-sizing:border-box;}
+.connectedTeller .marked-words{ width: 100%; text-align: center;color: #fff; padding-top: 20px;}
+.connectedTeller .marked-words .big-one{ font-size: 36px; line-height: 54px; }
+.connectedTeller .marked-words .big-two{ padding-top:50px; font-size: 28px; color:#d7d8d6;}

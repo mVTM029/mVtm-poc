@@ -1,0 +1,10 @@
+/* selectCardType */
+
+.selectCardType{height: 56%; width: 100%; margin-top: -125px; text-align:center;}
+.selectCardType .card-type{ width:100%;text-align:center;color:#fff;margin-top:180px;}
+.selectCardType .card-type div{width: 11em;height: 12em;float: left;font-size: 16px;margin-left: 30px;}
+.selectCardType .card-type div img{border:none;width:11em;height:10em;}
+.selectCardType .card-type div a{text-align:center;display:inline-block;width:100%;height:18%;margin-top:2%;font-weight: 600;}
+.animation-bgc {width: 100%;height: 100%;background: rgba(24, 38, 49, 1)!important;}
+.scanId-title{width:100%;text-align:center;color:#fff;padding-top:20px}
+.scanId-title .take-paper{font-size:1.5em;line-height:1.5em;font-weight:600}

@@ -1,0 +1,18 @@
+/*login*/
+.view-login{height: 100%;  background:#ededed;}
+.view-login h2{ padding-top: 150px; font-size: 26px; text-align: center;}
+.view-login .login-form{ margin: 20px auto 0; width: 500px; height: 360px; border:1px solid #f2f2f2;background:rgba(255,255,255,.5); box-shadow: 0 0 4px #f2f2f2; overflow: hidden;}
+.view-login .login-form ul{ padding:32px 60px 0;}
+.view-login .login-form li {float: left; margin-top: 30px; width: 100%; border-bottom:1px solid #dddddd;}
+.view-login .login-form li em{ float: left; width: 32px; height: 32px;}
+.view-login .login-form li .icon{font-size: 28px; color: #333;}
+.view-login .login-form li .text{ float: left; margin-left:40px ;height: 32px; line-height: 32px;width: 60%; background: none;}
+.view-login .login-form .btnPosition{ margin-top: 40px; border-bottom: none;}
+.view-login .login-form .btn{ width:100%; line-height: 44px; text-align: center; color: #fff; font-size: 16px; background: #db0011; cursor: pointer;}
+.view-login .login-form .btn:hover{background: #a4000d;}
+.view-login .login-form .btn:active{background: #83000a;}
+
+/*login icon*/
+.view-login .icon-in-branch:before{content: "\f03a";}
+.view-login .icon-security-lock:before{content: "\f02a";}
+.view-login .icon-confidential:before{content: "\f050";}

@@ -1,0 +1,69 @@
+/*dialog*/
+.home-masklayer{position: absolute;left: 0;bottom: 0;width: 100%;height: 100%; background: #000; opacity: .5; filter: alpha(opacity=50); z-index: 98; display: none;}
+.layer-ui{ position: absolute; left: 50%; bottom:20%; margin-left: -660px;width: 1320px; height: 600px; border-radius:10px;background: #ededed; box-shadow: 0 0 4px #ccc; z-index: 100; display: none;letter-spacing:-1px}
+#timeout-dialog.layer-ui{  z-index: 1000;}
+.layer-ui .ui-frame{ position: relative; width:100% ; height: 100%;}
+.control-dialog{}
+.layer-header{ padding-top: 50px; text-align: center;}
+.layer-header .layer-header-ico{display: inline-block; width: 120px; height: 120px;}
+.layer-header .layer-header-name{ padding-top: 30px;font-size: 36px;}
+.layer-header .red{color: #9E6D0E; }
+.layer-header .blue{color: #018685; }
+.layer-container{ padding-top:60px; font-size: 26px; text-align: center;}
+.layer-container p{ color: #a1a1a1; line-height: 60px;}
+.layer-container .morerow{ padding:0 14%; text-align: center;line-height: 40px;}
+
+.layer-footer{ position: absolute; bottom: 50px; width: 100%; text-align: center;}
+.layer-footer .layer-btns{ display: inline-block; margin:0 20px; width:280px; height: 70px; line-height: 70px; border-radius: 4px; border: 2px solid #8f8f8f; cursor: pointer;}
+#continue-confirm{background:rgba(255, 205, 0, 1.0);border:1px solid rgba(255, 205, 0, 1.0);}
+.layer-footer .btn-red{ border-color: rgba(255, 205, 0, 1.0);  background: rgba(255, 205, 0, 1.0);}
+.layer-footer .btn-red span{color: #000!important;}
+.layer-footer .layer-btns i{display: inline-block; margin-left: 14px; width: 30px; height: 30px;}
+.layer-footer .layer-btns span{ display: inline-block; color: #333; font-size: 28px; text-align: center;}
+.layer-footer .home{ background: url(../img/dialog/back-home.png) left 6px no-repeat;}
+.layer-footer .continue{ background: url(../img/dialog/continue.png) left 8px no-repeat;}
+.layer-footer .next{ background: url(../img/dialog/next.png) left 8px no-repeat;}
+.layer-footer-language{padding-left: 45%; width: inherit;}
+
+/*Dialog ico*/
+.layer-ui .cannot-open-card{background: url(../img/dialog/proplem.png) no-repeat;}
+.layer-ui .no-server{background: url(../img/dialog/proplem.png) no-repeat;}
+.layer-ui .proplem{background: url(../img/dialog/proplem.png) no-repeat;}
+.layer-ui .prefill{background: url(../img/dialog/prefill.png) no-repeat;}
+.layer-ui .noidentify-idcard{background: url(../img/dialog/proplem.png) no-repeat;}
+.layer-ui .rate{ background: url(../img/rateExperience/card.png) no-repeat;}
+.layer-ui .waitingFace{background: url(../img/facetoface/teller-img.png) no-repeat;background-size:100%;}
+
+.waitingDialog{background:rgb(24,38,49);box-shadow: none;}
+.container-wait {padding-top:100px}
+#container-wait-p{  color: #FFFFFF;font-size:26pt;}
+.waitingDialog .wait-container{padding-top:100px;text-align: center;}
+.wait-container .layer-header-ico{display: inline-block; width: 260px; height: 200px;}
+.wait-container .layer-header-name{ padding-top: 30px;font-size: 36px;}
+.waiting-circle i{display: inline-block;width: 21px;  height: 21px;border-radius: 50%;margin-right:25px;background: #808080;  }
+.waiting-circle :nth-child(1){
+    animation:mymove 2.5s infinite;
+    animation-delay:1s;
+
+}
+.waiting-circle :nth-child(2){
+    animation:mymove 2.5s infinite;
+    animation-delay:1.5s;
+}
+.waiting-circle :nth-child(3){
+    animation:mymove 2.5s infinite;
+    animation-delay:2s;
+}
+.waiting-circle :nth-child(4){
+    animation:mymove 2.5s infinite;
+    animation-delay:2.5s;
+}
+.waiting-circle :nth-child(5){
+    animation:mymove 2.5s infinite;
+    animation-delay:3s;
+}
+
+@keyframes mymove{
+    from{background:#808080;}
+    to{background:#fff;}
+}

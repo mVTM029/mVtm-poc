@@ -1,0 +1,25 @@
+/*electronBanking*/
+.main-inner{  width: 102.5%; height:100%;  }
+#img{height: 348px;  background: url(../img/electronBanking/ebanking.png) no-repeat;background-size: 100%;}
+.box-footer{position: relative;  height: 588px;  top: 250px;  z-index: 2;  font-size: 22px;  margin: 178px 42px -67px 17px;  line-height: 70px;  padding-left: 60px;}
+.box-footer p{text-align:center;}
+.tnc-middle{position:absolute;top:280px;left:32%;height:27px;line-height:25px;text-align: center;background: #ddd;padding:10px 32px;opacity:.7;}
+.tnc-middle span{font-size:22px;display: block;}
+.ibox-left{width:405px;height:287px;border-radius:15px;float:left;background:#fff;position:relative;left:-40px;box-sizing: border-box;border:1px solid transparent;}
+.ibox-right{width:405px;height:287px;float:left;border-radius:15px;background:#fff;position:relative;left:50px;box-sizing: border-box;border:1px solid transparent;}
+.box-left,.box-right{width:236px;height:114px;margin-left:-9px;padding:34px 10px 10px 10px;text-align:center;border-radius:15px; position:absolute;top:-62px;left:85px;background:#9865c9;}
+.box-right{background:#5494d3;}
+.box-left,.box-right:hover{cursor:pointer;}
+.box-left dt,.box-right dt{position:relative;}
+.box-left dd,.box-right dd{color:#fff;font-size:20pt;}
+.icon-left,.icon-right{width:200px;height:78px;margin-left:85px;background:url(../img/electronBanking/checked-internet.png) no-repeat;}
+.icon-right{background:url(../img/electronBanking/u173.png) no-repeat;left:46%;background-size:31%}
+.ibox-right .tnc-content,.ibox-left .tnc-content{ margin:128px 42px -67px 24px;font-size:18pt;cursor: pointer;}
+.ibox-left .tnc-content .icon-chevron-right,.ibox-right .tnc-content .icon-chevron-right {    width: 36px;  height: 25px;  position: relative;  left: -11px;  top: 14px;  background: url(../img/electronBankingtnc/open-pdf.png) no-repeat;  background-size: 27%;}
+.agree-iterm-content{ padding-left:46px;font-size:1em;padding-top:60px;}
+.main-inner .layer {background: rgba(255, 255, 255, .4);  }
+.box-footer .eleIconPos{background-color: #000;opacity: .2;width:108.2%;height:42px;position:relative;left: -10px;  top: -24px;  border-bottom-right-radius: 15px;  border-bottom-left-radius: 15px;}
+.box-footer .eleFontPos{position:relative;bottom:79px;}
+.electronBanking-img{width: 100%;height: 333px;overflow: hidden; position:absolute;top:0;left:-4px; background: url(../img/electronBanking/ebanking.png) no-repeat;background-size: 100%;}
+.electronBanking-img-title{width:100%;height:90px;position:relative;background:rgba(29,38,45,0.6);top:243px;}
+.electronBanking-img-title span{position: absolute;left:76px;line-height:90px;font-size:3em;color:#fff;margin-left:12px;}

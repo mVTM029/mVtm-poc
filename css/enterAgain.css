@@ -1,0 +1,8 @@
+/*enter-password*/
+.enter-again{width:850px; height:530px; background:#fff; margin:185px auto 0; border-radius:8px; }
+.enter-again .enter-again-card{width:340px; height:240px; background:url("../img/enterPassword/set.png"); margin:0 auto; position:relative; top:-114px;}
+.enter-again .content-title{font-size:30px;text-align:center;margin-top:-75px;}
+.enter-again .content-remind{font-size:24px;text-align:center;margin-top:50px;}
+.enter-again .box{padding:50px 114px; overflow: hidden; text-align: center;}
+.enter-again .text{background-color:#ededed;width:60px;height:60px;border:1px solid #929292;float: left;margin:0 20px; }
+.input-select{border:1px solid red;position:absolute;top:-10000px;}

@@ -1,0 +1,6 @@
+/*takeToken*/
+/*.token .take-token{height: 530px; width: 100%;background: url(../img/animation/take-token.gif) center -110px no-repeat;}*/
+.token .take-token{height: 530px; width: 100%;text-align: center;}
+.token .marked-words{ width: 100%; text-align: center;color: #d7d8d6; padding-top: 20px;}
+.token .marked-words .big-one{ font-size: 36px;}
+.token .marked-words .big-two{ padding-top:50px; font-size: 26px;}

@@ -1,0 +1,8 @@
+/*phoneBankNumber*/
+.setPassword .text:first-child { margin-left: 0!important; }
+.setPassword .setP-phonebank1{ background:url("../img/phoneBank/phone-open.png") no-repeat;background-size:59%;}
+.setPassword .setP-phonebank2{ background:url("../img/phoneBank/phone-close.png") no-repeat;background-size:59%;}
+.setPassword .setP-ico3 {  background: url(../img/phoneBank/set.png) no-repeat 50% 0;  }
+.setPassword .phone-img{position: absolute; top:78px; left: 66%; margin-left: -130px; width:262px; height:220px;}
+.warning-label{width:847px;height:70px;line-height:70px;background:#fff;margin:28px auto;text-align: center;box-shadow: 0 0 10px rgba(255, 205, 0, 0.8);}
+.warning-label p{font-size:20px;}

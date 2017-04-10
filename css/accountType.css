@@ -1,0 +1,32 @@
+/*accountType*/
+.account-type{ width:102.5%;height:100%; position:relative; }
+.account-type .terms-premier, .account-type .terms-advance{  display: block;  cursor: pointer;  font-size: 17pt;  margin: 20px 0 24px;  color: #333;  line-height: 48px; text-indent: 1.5em;  text-align: left;  background: url(../img/accountType/icon-pdf.png) no-repeat left center;  }
+.account-type .select-title{ padding: 15px 0 10px;font-size: 30px;}
+.account-type .select-card{  position: absolute;top: 327px;left: 116px;}
+.account-type .select-card .fr{left:102px;}
+.account-type .select-card li{padding-bottom:10px;width: 410px; text-align: center; background: #fff; height: 575px; position:relative;border-radius:20px;box-sizing: border-box; }
+.account-type .select-card li img {position:relative;top:-40px;width: 236px;height:148px; border-radius: 10px;}
+.account-type .select-card li h2{ font-size: 24pt; text-align: left; margin-left:30px;margin-top:-24px;}
+.account-type .select-card li .select-card-title{margin: 10px 30px;font-size: 17px; text-align: left;}
+.account-type .select-card li .select-card-title .title{font-size: 28px; margin: 6px 0 10px 0; text-align: left;}
+.account-type .select-card li p{ background: url(../img/accountType/u154.png) left 5px no-repeat;padding-left:30px;line-height: 28px;}
+.account-type .select-card .terms,.account-type .select-card .terms2{ background: url(../img/accountType/u203.png) left 7px top 0 no-repeat;padding-left:30px;line-height: 28px;position:relative;bottom:-10px;background-size:11px;}
+.account-type .select-cards{width:190px;height:60px;line-height: 60px;}
+.account-type .select-cards input{display: none;border: none;}
+/*.account-type .select-cards input:checked + .radiobox{ color: #fff; background:#008580 url(../img/common/checked.png) 12px 18px no-repeat;}*/
+.account-type .select-cards .radiobox{width:86%; background:#ededed;height:60px;line-height: 60px;font-size:26px;text-align:center;cursor: pointer; position:absolute; bottom:10px;}
+.radioboxChecked{ color: #fff; background:#008580 url(../img/common/checked.png) 12px 18px no-repeat !important;}
+.form-footer{  height:150px; width:75%;  background:#fff;  position:absolute;  bottom:0;  }
+.form-footer .agree-term{color:#333;margin-top:2%;margin-left:5%;line-height:122%;}
+.form-footer .agree-term label{position:relative;top:-9px;left:30px;font-size:24px;}
+.form-footer .agree-term .no-check{background:url(../img/accountAgreement/agree-nocheckbox.png) no-repeat;cursor: pointer;width:38px;height:34px;display:inline-block;background-size:82%;}
+.form-footer .agree-term .checked{background:url(../img/accountAgreement/agree-checkbox.png) no-repeat;background-size:82%;}
+.account-type .select-card .levitate{  width:400px;  height:800px;  background:#fff;  position:absolute;  top:-80px;  left:-300px;  font-size: 22px;  z-index: 1;  }
+.account-type .select-card .levitate2{  width:400px;  height:800px;  background:#fff;  position:absolute;  top:-80px;  left:350px;  font-size: 22px;  z-index: 1;  }
+.display{ display:none;  }
+.main-container .formData{position:absolute; width:100%;height:97%; z-index:2; overflow:hidden; display:none}
+.accountType-img{width: 100%;height: 250px;overflow: hidden; position:absolute;top:0;left:-4px; background: url(../img/accountType/a3.png) no-repeat;background-size: 100%;}
+.accountType-img-title{width:100%;height:90px;position:relative;background:rgba(29,38,45,0.6);top:160px;}
+.accountType-img-title span{position: absolute;left:76px;line-height:90px;font-size:3em;color:#fff;margin-left:12px;}
+.accountType-agree-iterm-content{font-size:15pt;margin-right:5px;margin-top:-9px;}
+.accountType-choiceCard-footer{position:absolute;top:390px;}

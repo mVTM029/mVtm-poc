@@ -1,0 +1,115 @@
+<div class="account-type formData-inner">
+	<div class="form-condition">
+		<!--<h2 class="form-header"><span></span><label>{Select}</label></h2>-->
+		<!-- 此处新ui3.31中，内容没有左内边距，所以下面的form-inline不可用，改为form-inline-no -->
+		<div class="form-inline-no">
+			<!--<h2 class="select-title"></h2>-->
+			<div class="accountType-img">
+				<div class="accountType-img-title">
+					<span>{Take}</span>
+				</div>
+			</div>
+			<div class="select-card" id="select-card">
+				<ul>
+					<li class="fl">
+						<img src="img/accountType/advancecard.png" />
+						<h2 style="border-bottom:3px solid black;width:80%">{Advance}</h2>
+
+						<div class="select-card-title">
+							<h2 class="title">{Eligibility}</h2>
+							<p>{Total}</p >
+							<h2 class="title">{Benefits}</h2>
+							<p>{Convenient}</p >
+							<p>{Tailored}</p >
+							<p>{preferential}{rewards}</p >
+							<!--<label class="select-cards">-->
+								<!--<input type="radio" name="idCard" id="advance-card" data-type="Advance" disabled="disabled"/>-->
+								<!--<button type="button" class="radiobox" >{SelectAdvance}</button>-->
+							<!--</label>-->
+							<div class="accountType-choiceCard-footer">
+								<div href="#" class="terms-advance" data-read="false" data-pdf="gold">
+									<div id="goldTerms" style="display: inline;border-bottom:3px solid black;">{Terms}
+
+									</div>
+									<a href="#" class="terms2"></a>
+								</div>
+								<div class="agree-term accountType-agree-iterm-content" id="agree-term-gold">
+									<table>
+										<tbody><tr>
+											<td style="vertical-align: top;">
+												<button data-code="tokenDemandChoice" data-type="Advance" id="goldCard" class="no-check" ></button>
+											</td>
+											<td><label>{agree}</label></td>
+										</tr>
+										</tbody></table>
+									<span id="goldSpan" style="color: red;font-size:19px;padding-left:35px;display: none; ">{ConditionsPdf}</span>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="fr">
+						<img src="img/accountType/premiercard.png" />
+						<h2 style="border-bottom:3px solid black;width:80%">{Premier}</h2>
+
+						<div class="select-card-title">
+							<h2 class="title">{Eligibility}</h2>
+							<p>{Minimum}</p >
+							<h2 class="title">{Benefits}</h2>
+							<p>{Dedicated}</p >
+							<p>{Anytime}</p >
+							<p>{Enjoy}</p >
+							<!--<label class="select-cards">-->
+								<!--<input type="radio" name="idCard" id="premier-card" data-type="Premier" disabled="disabled"/>-->
+								<!--<button type="button" class="radiobox" >{SelectPremier}</button>-->
+							<!--</label>-->
+							<div class="accountType-choiceCard-footer">
+								<div href="#" class="terms-premier" data-read="false" data-pdf="diamond">
+									<div id="premierTerms" style="display: inline;border-bottom:3px solid black;">{Terms}
+
+									</div>
+									<a href="#" class="terms"></a>
+								</div>
+								<div class="agree-term accountType-agree-iterm-content" id="agree-term-diamond">
+									<table>
+										<tbody><tr>
+											<td style="vertical-align: top;">
+												<button data-code="tokenDemandChoice" data-type="Premier" id="diamondCard" class="no-check" ></button>
+											</td>
+											<td><label>{agree}</label></td>
+										</tr>
+										</tbody></table>
+									<span id="diamondSpan" style="color: red;font-size:19px;padding-left:35px;display: none; ">{ConditionsPdf}</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div class="showPdf" id="showPdf-agree">
+		<div class="showImg"></div>
+		<span class="closePdf" id="closePdf"></span>
+		<div class="loading"></div>
+	</div>
+
+
+</div>
+
+<!--<div class="form-footer">-->
+	<!--<div class="agree-term agree-term-content" id="agree-term">-->
+		<!--<table>-->
+			<!--<tr>-->
+				<!--<td style="vertical-align: top;"><div class="no-check"></div></td>-->
+				<!--<td><label>{agree}</label></td>-->
+			<!--</tr>-->
+		<!--</table>-->
+	<!--</div>-->
+
+<!--</div>-->
+<button class="btns next disabled" id="accountType-next" disabled>
+	<span>{continue}</span>
+	<i></i>
+</button>

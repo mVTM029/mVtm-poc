@@ -1,0 +1,70 @@
+<div class="main-inner" style="position: relative;">
+    <div class="form-condition">
+        <div class="electronBanking-img">
+            <div class="electronBanking-img-title">
+                <span>{TakeEbanking}</span>
+            </div>
+        </div>
+        <div class="box-footer">
+            <div class="ibox-left">
+                <dl class="box-left">
+                    <dt><i class="select-left"></i><i class="icon icon-left"></i></dt>
+                    <dd class="eleIconPos">
+                    </dd>
+                    <dd class="eleFontPos">
+                        {internetBanking}
+                    </dd>
+                </dl>
+
+                <div id="phoneBankingPdf" class="tnc-content" style="line-height: 36px;" data-read="false" data-pdf="phonebankingterms"><span style="border-bottom: 2px solid black;"><strong>{internetBankingTerms}</strong></span>
+
+                    <!--<div class="tnc-content" data-read="false" data-pdf="mobile">{phoneBankingTerms}-->
+
+                    <i class="icon icon-chevron-right"></i>
+                </div>
+                <div id="phoneAgree" class="agree-term agree-iterm-content">
+                    <table>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <button data-code="tokenDemandChoice" id="internetBanking" class="no-check" ></button>
+                            </td>
+                            <td><label style="letter-spacing: 0;">{agree}</label></td>
+                        </tr>
+                    </table>
+                    <span id="interNetSpan" style="color: red;font-size:19px;padding-left:35px;display: none; ">{ConditionsPdf}</span>
+                </div>
+            </div>
+            <div class="ibox-right">
+                <dl class="box-right">
+                    <dt><i class="select-right"></i><i class="icon icon-right"></i></dt>
+                    <dd class="eleIconPos"></dd>
+                    <dd class="eleFontPos">{mobileBanking}</dd>
+                </dl>
+                <div id="internetBankingPdf" class="tnc-content" style="line-height: 36px;" data-read="false" data-pdf="internetbankingterms"><span style="border-bottom: 2px solid black;"><strong>{internetBankingTerms}</strong></span>
+                    <i class="icon icon-chevron-right"></i>
+                </div>
+                <div id="internetAgree" class="agree-term agree-iterm-content">
+                    <table>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <button data-code="phoneBankNumber" id="mobileBanking" class="no-check" ></button>
+                            </td>
+                            <td><label style="letter-spacing: 0;">{agreeAgain}</label></td>
+                        </tr>
+                    </table>
+                    <span id="phoneBankSpan" style="color: red;font-size:19px;padding-left:35px;display: none; ">{ConditionsPdf}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showPdf" id="showPdf-agree">
+        <div class="showImg"></div>
+        <span class="closePdf" id="closePdf"></span>
+
+        <div class="loading"></div>
+    </div>
+</div>
+<a class="btns next disabled" id="ebanking-next"> <span>{btn}</span>
+    <i></i>
+</a>

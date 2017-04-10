@@ -1,0 +1,11 @@
+/*RateExperience*/
+.rateExperience .rateExperience-card{width:120px; height:120px; background:url("../img/rateExperience/card.png") no-repeat; margin:30px auto;}
+.rateExperiencebg .input{text-align:center;margin:30px auto;}
+.rateExperiencebg .input input{font-size:30px;width:350px;height:40px;outline: none;}
+
+.rateExperiencebg .wrapper .star li.act{background-image:url("../img/rateExperience/star-on.png");}
+.rateExperiencebg .wrapper .submit-btn,.back-home{width:280px;height:70px;line-height: 70px;background-color: #da0011;color:#fff;font-size:26px;margin:50px auto;cursor: pointer;}
+.rateExperiencebg .wrapper .back-home{display: none;}
+.rateExperiencebg .wrapper .result-text{text-align: center;font-size:24px;margin-top:30px;}
+/*.form-inline .form-group .fl{padding: 20px 42px 20px 10px; width:930px;line-height:40px; color: #999;font-size: 28px;}
+*/

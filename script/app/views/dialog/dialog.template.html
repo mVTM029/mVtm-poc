@@ -1,0 +1,654 @@
+﻿
+<!-- Workout Time Dialog  -->
+<div class="layer-ui" id="workout-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico no-server"></i>
+				<h2 class="layer-header-name red">{workout-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{workout-container-1}</p>
+				<p>{workout-container-2}</p>
+			</div>
+<!-- 			<div class="layer-footer">
+				<div class="layer-btns" id="workout-cancel">
+					<span>{workout-footer-btn}</span> <i class="home"></i>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+
+<div class="layer-ui" id="outofservice">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico no-server"></i>
+				<h2 class="layer-header-name red">{outofserviceTitle}</h2>
+			</div>
+			<div class="layer-container">
+				<!-- <p>{workout-container-1}</p> -->
+				<p>{outofservice}</p>
+			</div>
+<!-- 			<div class="layer-footer">
+				<div class="layer-btns" id="outofservice-cancel">
+					<span>{workout-footer-btn}</span> <i class="home"></i>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+<!-- Timeout Dialog  -->
+<div class="layer-ui" id="timeout-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico no-server"></i>
+				<h2 class="layer-header-name red">{timeout-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>
+					{timeout-container-1}<em id="timeout">2</em>{timeout-container-1-1}
+				</p>
+				<p>{timeout-container-2}</p>
+			</div>
+
+			<div class="layer-footer">
+				<div class="layer-btns" id="continue-timeout">
+					<span>{timeout-footer-btn-backHome-1}(<em id="timeout-timer">2</em>{timeout-footer-btn-backHome-2})</span>
+				</div>
+				<div class="layer-btns btn-red" id="cancel-timeout">
+					<span>{timeout-footer-btn-continue}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- connecting Timeout dialog -->
+<div class="layer-ui" id="connecting-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{connecting-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{connecting-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="exit-confirm">
+					<span>{backHome-footer-exit-btn}</span>
+					<!--<i class="home"></i>-->
+				</div>
+				<div class="layer-btns" id="continue-confirm">
+					<span>{backHome-footer-continue-btn}</span>
+					<!--<i class="continue"></i>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Exit Button Back to Home Dialog-->
+<div class="layer-ui" id="backhome-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{backHome-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{backHome-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="backhome-confirm">
+					<span>{backHome-footer-confirm-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="backhome-cancel">
+					<span>{backHome-footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Pre filling Dialog-->
+<div class="layer-ui" id="prefill-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico prefill"></i>
+				<h2 class="layer-header-name blue">{pre-filling-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{pre-filling-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="prefill-no">
+					<span>{pre-filling-noUse-btn}</span> <i class="continue"></i>
+				</div>
+				<div class="layer-btns btn-red" id="prefill-yes">
+					<span>{pre-filling-use-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Ask Questions Pages Dialog-->
+<div class="layer-ui" id="idcard-dialog1">
+	<div class="ui-frame">
+		<!--dialog Back to Home-->
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico cannot-open-card"></i>
+				<h2 class="layer-header-name red">{askQuestions-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{askQuestions-container-1}</p>
+				<p class="morerow">{askQuestions-container-2}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="back-idcard-dialog1">
+					<span>{askQuestions-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="continue-idcard-dialog1">
+					<span>{askQuestions--footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="layer-ui" id="idcard-dialog2">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico cannot-open-card"></i>
+				<h2 class="layer-header-name red">{askQuestions2-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{askQuestions2-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="back-idcard-dialog2">
+					<span>{askQuestions2-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="continue-idcard-dialog2">
+					<span>{askQuestions2--footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="layer-ui" id="idcard-dialog3">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico cannot-open-card"></i>
+				<h2 class="layer-header-name red">{askQuestions3-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{askQuestions3-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="back-idcard-dialog3">
+					<span>{askQuestions3-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="continue-idcard-dialog3">
+					<span>{askQuestions3--footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="layer-ui" id="idcard-dialog4">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico cannot-open-card"></i>
+				<h2 class="layer-header-name red">{askQuestions4-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{askQuestions4-container-1}</p>
+				<p class="morerow">{askQuestions4-container-2}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="back-idcard-dialog4">
+					<span>{askQuestions4-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="continue-idcard-dialog4">
+					<span>{askQuestions4--footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="layer-ui" id="idcard-dialog5">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico cannot-open-card"></i>
+				<h2 class="layer-header-name red">{askQuestions5-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{askQuestions5-container-1}</p>
+				<p class="morerow">{askQuestions5-container-2}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="back-idcard-dialog5">
+					<span>{askQuestions5-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="continue-idcard-dialog5">
+					<span>{askQuestions5--footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Header Select speaking Language Dialog-->
+<div class="layer-ui" id="spoken-language">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="form-condition">
+				<h2 class="form-header">
+					<span></span><label>{language-header}</label>
+				</h2>
+
+				<form id="applyData-form">
+					<div class="form-inline">
+						<div class="form-group">
+							<label class="label-lan-dialog label-inline">{language-container}</label>
+							<div class="select-box fr">
+								<!--<label class="select-btn">-->
+									<!--<input type="radio" name="language"/>-->
+									<!--<div class="checkbox" id="js-language-zh">{language-Mandarin}</div>-->
+								<!--</label>-->
+								<label class="select-btn">
+									<input type="radio"name="language" />
+									<div class="checkbox" id="js-language-can">{language-Cantonese}</div>
+								</label>
+								<label class="select-btn">
+									<input type="radio" name="language"/>
+									<div class="checkbox" id="js-language-en">{language-English}</div>
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="layer-footer layer-footer-language">
+				<!-- <div class="layer-btns" id="select-language-cancel">
+					<span>Cancel</span> <i class="continue"></i>
+				</div> -->
+				<div class="layer-btns" id="select-language-cancel">
+					<span>{language-footer-cancel-btn}</span> <i class="continue"></i>
+				</div>
+				<div class="layer-btns btn-red" id="select-language-next">
+					<span>{language-footer-continue-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Now remote teller Select speaking Language Dialog-->
+<div class="layer-ui" id="spoken-language1">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="form-condition">
+				<h2 class="form-header">
+					<span></span><label>{language2-header}</label>
+				</h2>
+				<div class="form-inline">
+					<div class="form-group">
+						<label class="label-lan-dialog label-inline">{language2-container}</label>
+						<div class="select-box fr">
+							<label class="select-btn"> <input type="radio"
+								name="language" checked="checked" />
+								<div class="checkbox">{language2-Mandarin}</div>
+							</label> <label class="select-btn"> <input type="radio"
+								name="language" />
+								<div class="checkbox">{language2-Cantonese}</div>
+							</label> <label class="select-btn"> <input type="radio"
+								name="language" />
+								<div class="checkbox">{language2-English}</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="layer-footer">
+				<!-- <div class="layer-btns" id="select-language-cancel1">
+					<span>Cancel</span> <i class="continue"></i>
+				</div> -->
+				<div class="layer-btns btn-red" id="select-language-next1">
+					<span>{language2-footer-continue-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Force remote teller Select speaking Language Dialog-->
+<div class="layer-ui" id="spoken-language-force">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="form-condition">
+				<h2 class="form-header">
+					<span></span><label>{language3-header}</label>
+				</h2>
+				<div class="form-inline">
+					<div class="form-group">
+						<label class="label-lan-dialog label-inline">{language3-container}</label>
+						<div class="select-box fr">
+							<label class="select-btn"> <input type="radio"
+								name="language" />
+								<div class="checkbox" id="zh-language">{language3-Mandarin}</div>
+							</label> <label class="select-btn"> <input type="radio"
+								name="language" />
+								<div class="checkbox" id="can-language">{language3-Cantonese}</div>
+							</label> <label class="select-btn"> <input type="radio"
+								name="language" />
+								<div class="checkbox" id="en-language">{language3-English}</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="layer-footer">
+				<!-- <div class="layer-btns" id="select-language-cancelforce">
+					<span>Cancel</span> <i class="continue"></i>
+				</div> -->
+				<div class="layer-btns btn-red disabled" id="select-language-force">
+					<span>{language3-footer-continue-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Blacklist Dialog -->
+<div class="layer-ui" id="blacklist-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{blacklist-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{blacklist-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="blacklist-backhome">
+					<span>{blacklist-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Development Code error-->
+<div class="layer-ui" id="code-error">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{development-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{development-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="code-error-backhome">
+					<span>{development-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- No insert Id card(娌℃湁鎻掑叆韬唤璇�2鍒嗛挓瓒呮椂寮瑰嚭灞�)-->
+<div class="layer-ui" id="idcard-timeout-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{noId-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{noId-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="idcard-timeout-backhome">
+					<span>{noId-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns btn-red" id="idcard-timeout-retry">
+					<span>{noId-footer-retry-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- May not identify the card Dialog(3娆′箣鍐呰瘑鍒棤鏁堢殑鍗¤皟鐢�)-->
+<div class="layer-ui" id="noidentify-idcard-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico noidentify-idcard"></i>
+				<h2 class="layer-header-name red">{scannFaile-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{scannFaile-container-1}</p>
+				<p>{scannFaile-container-2}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="noidentify-idcard-backhome">
+					<span>{scannFaile-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns btn-red" id="noidentify-idcard-retry">
+					<span>{scannFaile-footer-retry-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- May not identify the card Dialog(3娆¤瘑鍒崱澶辫触涔嬪悗璋冪敤)-->
+<div class="layer-ui" id="scanidcard-failed-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico noidentify-idcard"></i>
+				<h2 class="layer-header-name red">{scannFaile2-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{scannFaile2-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="scanidcard-failed-backhome">
+					<span>{scannFaile2-footer-backHome-btn}</span> <i class="home"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--rateExperience dialog  -->
+<div class="layer-ui" id="rateExperience-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico cannot-open-card"></i>
+				<h2 class="layer-header-name red">{rate-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{rate-container}</p>
+				<textarea rows="3" cols="100"></textarea>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="cancel-rateExperience-dialog">
+					<span>{rate-footer-cancel-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns" id="confirm-rateExperience-dialog">
+					<span>{rate-footer-confirm-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--rateExperience finish  confirm Back to Home Dialog-->
+<div class="layer-ui" id="finish-rateExperience">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico rate"></i>
+				<h2 class="layer-header-name blue">{rate2-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{rate2-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="cancel-rateExperience">
+					<span>{rate2-footer-cancel-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns btn-red" id="back-rateExperience">
+					<span>{rate2-footer-backHome-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--setpin Dialog-->
+<div class="layer-ui" id="setpin-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{setpin-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{setpin-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns btn-red" id="back-setpin">
+					<span>{setpin-footer-back-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--phonebanking password Dialog-->
+<div class="layer-ui" id="phonebanking-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{setpin-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{setpin-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns btn-red" id="back-phonebanking">
+					<span>{setpin-footer-back-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- no teller -->
+<div class="layer-ui" id="noteller-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{noteller-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{noteller-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns" id="noteller-backhome">
+					<span>{noteller-backHome-btn}</span> <i class="home"></i>
+				</div>
+				<div class="layer-btns btn-red" id="noteller-retry">
+					<span>{noteller-retry-btn}</span> <i class="next"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 密码位数错误Dialog -->
+<div class="layer-ui" id="passwordNum-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="layer-header">
+				<i class="layer-header-ico proplem"></i>
+				<h2 class="layer-header-name red">{passwordNum-header}</h2>
+			</div>
+			<div class="layer-container">
+				<p>{passwordNum-container}</p>
+			</div>
+			<div class="layer-footer">
+				<div class="layer-btns btn-red" id="passwordNum-retry">
+					<span>{passwordNum-footer-back-btn}</span> <i class="continue"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="layer-ui waitingDialog" id="waiting-dialog">
+	<div class="ui-frame">
+		<div class="control-dialog">
+			<div class="wait-container">
+				<i class="layer-header-ico waitingFace"></i>
+				<div class="waiting-circle">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+				<!--<h2 class="layer-header-name red">{passwordNum-header}</h2>-->
+			</div>
+			<div class="layer-container container-wait">
+				<p id="container-wait-p">{customerWaiting}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+

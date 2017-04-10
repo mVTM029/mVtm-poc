@@ -1,0 +1,45 @@
+<div class="pdfBox">
+	<div class="form-condition">
+		<h2 class="form-header">
+			<span></span><label>{tncTitle}</label>
+		</h2>
+		<div id="generalPdf" class="tnc-content" data-pdf="general" data-read="false">
+			{tncTitle} <i class="icon icon-chevron-right"></i>
+			<span style="float: right;color:#808080;margin-top:18px;">{pleaseClickHere}</span>
+		</div>
+		<h2 class="form-header">
+			<span></span><label>{tariffTitle}</label>
+		</h2>
+		<div id="tariffPdf" class="tnc-content" data-pdf="tariff" data-read="false">
+			{tariffTitle}<i class="icon icon-chevron-right"></i>
+			<span style="float: right;color:#808080;margin-top:18px;">{pleaseClickHere}</span>
+		</div>
+		<h2 class="form-header">
+			<span></span><label>{debitCardTitle}</label>
+		</h2>
+		<div id="debitPdf" class="tnc-content" data-pdf="debit" data-read="false">
+			{debitCardTitle}<i class="icon icon-chevron-right"></i>
+			<span style="float: right;color:#808080;margin-top:18px;">{pleaseClickHere}</span>
+		</div>
+		<div class="form-inline">
+			<div class="agree-term agree-term-content" id="agree-term">
+				<table>
+					<tr>
+						<td style="vertical-align: top;"><button id="agreementCheck" class="no-check"></button></td>
+						<td><label>{agree}</label></td>
+					</tr>
+				</table>
+				<span id="agreeSpan" style="color: red;font-size:19px;padding-left:35px;display: none; ">{ConditionsPdf}</span>
+			</div>
+		</div>
+	</div>
+	<div class="showPdf" id="showPdf-agree">
+		<div class="showImg"></div>
+		<span class="closePdf" id="closePdf"></span>
+		<div class="loading"></div>
+	</div>
+</div>
+<a class="btns next disabled" id="accountAgreement-next"> <span>{btn}</span>
+	<i></i>
+</a>
+

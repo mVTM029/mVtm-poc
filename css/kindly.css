@@ -1,0 +1,40 @@
+/*kindly*/
+.kindly{padding-right:20px;display:flex; flex-direction: column;}
+.kindly .customer-info{padding-top: 40px;}
+.kindly .customer-info .info-img{float: left; width: 215px; height: 140px;}
+.kindly .customer-info .info-card{background: url(../img/kindly/info-card.png) no-repeat;background-size: 200px 130px;}
+.kindly .customer-info .info-paper{background: url(../img/kindly/info-peper.png) no-repeat;}
+.kindly .infos{float: left; width:710px; margin-top:10px;}
+.kindly .infos h2{font-size: 26px; line-height: 40px; color: #263039;}
+.kindly .infos p{font-size: 24px;line-height: 32px; color: #5c5c5c;letter-spacing:-1px}
+.kindly .mt{margin-top: 30px;}
+.kindly .mt24{margin-top: 24px!important;}
+.kindly .view-progress{padding-top: 50px; height:78px; background: url(../img/kindly/progress.png) 40px 40px no-repeat;}
+.kindly .view-progress ul{padding-top: 95px; width:1044px;}
+.kindly .view-progress ul li{float: left; width: 20%; font-size: 22px; line-height: 24px; text-align: center;}
+.header .remote span{margin: 13px 0 0 15px;}
+.header .remote .span-zh{margin: 25px 0 0 25px;}
+.js-remote .calling{width:280px;height:81px;}
+.js-remote-calling{background: url(../img/kindly/calling.png) no-repeat;background-size: cover;}
+.kindly .tit{font-size: 18px;font-family:'Arial Negreta', 'Arial Normal', 'Arial'; ;font-style:normal;font-weight: 700;color: #333333;}
+.kindly .moreinfo{text-align: right;}
+.kindly .customer-info{display: flex;flex-direction:row;justify-content:center;}
+.kindly .customer-info div{margin:0 56px 0 -7px;}
+.kindly .bank-card .view-card{display: flex;flex-direction:row;justify-content: center;padding-top: 20px;margin-left: -115px;}
+.kindly .bank-card .view-card li{margin-left: 50px;}
+.kindly-modal{display:none; width: 100%;height: 100%;position:fixed;left:0;top:0; background-color:#000000;opacity: 0.5;z-index:5; }
+.main-padding-inner .bank-card-info{display:none;width:637px;height: 355px;background-color: #FFFFFF;z-index: 7;position: absolute;left: 17%;top:29%; }
+.main-padding-inner .bank-card-info .card-info-title{width: 597px;height:70px;line-height:70px;background-color: #EDEDED;padding: 0 20px;}
+.bank-card-info .card-info-title .card-logo{float:left;width: 68px;height: 42px;margin:15px 10px 0 0;background: url(../img/kindly/glod-card.png)no-repeat; background-size:cover;}
+.bank-card-info .card-info-title .diam-logo{float:left;width: 68px;height: 42px;margin:15px 10px 0 0;background: url(../img/kindly/card-diamond.png)no-repeat; background-size:cover;}
+.bank-card-info .card-info-title .close-info{float:right; width: 25px;height: 25px;margin-top:20px;background: url(../img/kindly/close.png)no-repeat; background-size:cover;cursor: pointer;}
+.bank-card-info .card-info-title span{float:left;font-size: 18px;}
+.main-padding-inner .bank-card-info .card-info-intc{padding:0 20px;}
+.bank-card-info .card-info-intc h2{font-size: 24px;margin: 15px 0;}
+.bank-card-info .card-info-intc i{float:left;width: 10px;height: 10px;margin:10px 10px 0 0;border-radius:50%;background:#FFCD00; }
+.bank-card-info .card-info-intc p{font-size: 16px;height: 30px;line-height: 30px;}
+.bank-card-info .card-info-intc .elitytwo{margin-left:20px; }
+.bank-card-info .card-info-title .idcard-logo{float:left;width: 68px;height: 42px;margin:15px 10px 0 0;background: url(../img/kindly/info-card.png)no-repeat; background-size:cover;}
+.bank-card-info .card-info-title .address-logo{float:left;width: 68px;height: 42px;margin:15px 10px 0 0;background: url(../img/kindly/info-peper.png)no-repeat; background-size:cover;}
+
+

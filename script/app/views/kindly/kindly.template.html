@@ -1,0 +1,279 @@
+<div class="header">
+    <a class="{logo}"></a>
+
+    <h1>{account}</h1>
+
+    <div class="remote js-remote" id="js-remote">
+        <i></i> <span class="{span}">{remote}</span>
+    </div>
+    <div class="remote js-remote js-remote-calling hide" id="js-remote-calling">
+       <!-- <img src="img/kindly/calling.png">-->
+    </div>
+    <!--1th defaule information-->
+    <div class="top-remote top-remote-defaule" id="top-remote-defaule">
+        <span class="up-arrow"></span>
+
+        <p>{connectTime}</p>
+        <!-- 		<div class="remote-box">
+                    <a class="remote-btn" id="top-remote-connect">{connectNow}</a>
+                </div> -->
+    </div>
+
+    <!--2th speaking language-->
+    <div class="top-remote top-select-language" id="top-select-language">
+        <span class="up-arrow"></span>
+
+        <h2>{speakingLanguage}</h2>
+
+        <div class="select-speaking">
+            <ul>
+                <li id="can">{Chinese}</li>
+                <!--<li id="zh">{mandarin}</li>-->
+                <li id="en">{english}</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--3th waiting-connecting-->
+    <div class="top-remote top-remote-wait" id="top-remote-wait">
+        <span class="up-arrow"></span>
+
+        <div class="clearfix top-waiting"></div>
+        <h2>{connectingRemote}</h2>
+    </div>
+
+    <!--4th connected-->
+    <div class="top-remote top-remote-connected" id="top-remote-connected">
+        <span class="up-arrow"></span>
+
+        <div class="teller"></div>
+        <h2>{hello}</h2>
+    </div>
+
+
+    <!--system timeout-->
+    <div class="top-remote top-timeout" id="top-timeout">
+        <h2 id="top-timeout-timer">30</h2>
+
+        <p>{expire}</p>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="main-lefter">
+        <div class="status-bar">
+            <div class="clearfix box">
+                <h2>
+                    <em></em>{preparation}
+                </h2>
+                <ul>
+                    <li><em></em><span>{information}</span></li>
+                    <li><em></em><span>{agreement}</span></li>
+                    <li><em></em><span>{scan}</span></li>
+                </ul>
+            </div>
+            <div class="clearfix box">
+                <h2 class="twoLine">
+                    <em></em>{connect}
+                </h2>
+                <ul>
+                    <li><em></em><span>{connecting}</span></li>
+                </ul>
+            </div>
+
+            <div class="clearfix box">
+                <h2>
+                    <em></em>{application}
+                </h2>
+                <ul>
+                    <li><em></em><span>{application}</span></li>
+                    <li><em></em><span>{collect}</span></li>
+                </ul>
+            </div>
+
+            <div class="clearfix box">
+                <h2>
+                    <em></em>{issuing}
+                </h2>
+                <ul>
+                    <li><em></em><span>{Accounttype}</span></li>
+                    <li><em></em><span>{siganture}</span></li>
+                    <li><em></em><span>{setpin}</span></li>
+                    <li><em></em><span>{takecard}</span></li>
+                </ul>
+            </div>
+
+            <div class="clearfix box">
+                <h2>
+                    <em></em>{services}
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="formData"></div>
+        <div class="main-padding" id="view-part-container">
+            <div class="main-padding-inner">
+                <div class="form-condition kindly" onselectstart='return false'>
+                    <h2 class="clearfix form-header mt">
+                        <label>{produce}</label>
+                    </h2>
+
+                    <div class="clearfix customer-info">
+                        <div calss="info info-card">
+                            <p class="tit">{idcard}</p>
+                            <img class="id-card" src="./img/kindly/info-card.png" alt="infocard">
+
+                            <p class="moreinfo">{moreinfo}</p>
+                        </div>
+                        <div calss="info info-address">
+                            <p class="tit">{address}</p>
+                            <img calss="info-peper" id="infopeper" src="./img/kindly/info-peper.png" alt="address">
+
+                            <p class="moreinfo moreinfo-address">{moreinfo}</p>
+                        </div>
+                    </div>
+
+                    <h2 class="clearfix form-header mt">
+                        <label>{cards}</label>
+                    </h2>
+
+                    <div class="clearfix bank-card">
+                        <ul class="view-card">
+                            <li calss="card gold">
+                                <p class="tit">{goldcard}</p>
+                                <img class="glod-card-img" src="./img/kindly/glod-card.png" alt="gold card">
+
+                                <p class="moreinfo">{moreinfo}</p>
+                            </li>
+                          <!--  <li calss="card gold">
+                                <p class="tit">{goldcard}</p>
+                                <img class="glod-card-img" src="./img/kindly/glod-card.png" alt="gold card">
+
+                                <p class="moreinfo">{moreinfo}</p>
+                            </li>-->
+                            <li calss="card diamond">
+                                <p class="tit">{diamondcard}</p>
+                                <img class="diamond-card-img" src="./img/kindly/card-diamond.png" alt="diamond card">
+
+                                <p class="moreinfo">{moreinfo}</p>
+                            </li>
+                            <!--<li calss="card diamond">
+                                <p class="tit">{diamondcard}</p>
+                                <img class="diamond-card-img" src="./img/kindly/card-diamond.png" alt="diamond card">
+
+                                <p class="moreinfo">{moreinfo}</p>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <h2 class="clearfix form-header mt">
+                        <label>{overview}</label>
+                    </h2>
+
+                    <div class="clearfix">
+                        <div class="view-progress">
+                            <ul>
+                                <li>{preparation}</li>
+                                <li>{connect}</li>
+                                <li>{application}</li>
+                                <li>{issuing}</li>
+                                <li>{banking}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btns next" id="kindly-next">
+                    <span>{confirm}</span>
+                    <i></i>
+                </a>
+
+                <div class="bank-card-info gold-card-info">
+                    <div class="card-info-title">
+                        <i class="card-logo"></i>
+                        <span>{goldcard}</span>
+                        <i class="close-info close-gold"></i>
+                    </div>
+                    <div class="card-info-intc">
+                        <h2>{eligibility}</h2>
+
+                        <p><i></i>{elityone}</p>
+
+                        <p class="elitytwo">{elitytwo}</p>
+
+                        <h2>{benefits}</h2>
+
+                        <p><i></i>{benefitone}</p>
+
+                        <p><i></i>{benefittwo}</p>
+
+                        <p><i></i>{benefithress}</p>
+                    </div>
+                </div>
+                <div class="bank-card-info diamond-card-info">
+                    <div class="card-info-title">
+                        <i class="card-logo diam-logo"></i>
+                        <span>{diamondcard}</span>
+                        <i class="close-info close-diam"></i>
+                    </div>
+                    <div class="card-info-intc">
+                        <h2>{eligibility}</h2>
+
+                        <p><i></i>{elityone}</p>
+
+                        <p class="elitytwo">{elitydiam}</p>
+
+                        <h2>{benefits}</h2>
+
+                        <p><i></i>{benefitdo}</p>
+
+                        <p><i></i>{benefitdt}</p>
+
+                        <p><i></i>{benefitdth}</p>
+                    </div>
+                </div>
+                <div class="bank-card-info identity">
+                    <div class="card-info-title">
+                        <i class="card-logo idcard-logo"></i>
+                        <span>{idcard}</span>
+                        <i class="close-info close-identity"></i>
+                    </div>
+                    <ul class="card-info-intc">
+                        <p><i></i>{idintco}</p>
+                        <p><i></i>{idintco1}</p>
+                    </ul>
+                </div>
+                <div class="bank-card-info addrentity">
+                    <div class="card-info-title">
+                        <i class="card-logo address-logo"></i>
+                        <span>{address}</span>
+                        <i class="close-info close-address"></i>
+                    </div>
+                    <div class="card-info-intc">
+                        <p><i></i>{addresso}<br/>
+                            <i></i>{addresst}<br/>
+                            <i></i>{addressth}<br/>
+                            <i></i>{addressf}<br/>
+                        </p>
+
+                        <!--<p></p>-->
+
+                        <!--<p> </p>-->
+
+                        <!--<p></p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-righter">
+        <a class="btns exit" id="js-exit">
+            <span>{exit}</span>
+            <i></i>
+        </a>
+    </div>
+</div>
+<div class="kindly-modal"></div>
