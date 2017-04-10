@@ -1,5 +1,6 @@
 define(function (require) {
     var $ = require('jquery'),
+        router = require('app/util/router'),
         model = require('./forceConnectingTeller.model'),
         template = require('text!./forceConnectingTeller.template.html'),
         controller = require('./forceConnectingTeller.controller');
@@ -27,13 +28,16 @@ define(function (require) {
      * 事件绑定
      */
     function bind() {
+        $("#forceConnectingTeller-next").off().on("click", function () {
+            router.gotoView('forceConnectedTeller');
+        });
     }
 
     function run() {
         $(".formData").hide();
         $('#js-remote,#top-remote-defaule,#top-select-language').hide();
         $("#js-exit").show();
-        $("#js-exit").addClass("only-exit");
+        //$("#js-exit").addClass("only-exit");
         controller.statusStep(2, 1);
         controller.processVideo();
     }

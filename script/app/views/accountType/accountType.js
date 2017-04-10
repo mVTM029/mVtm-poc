@@ -35,8 +35,8 @@ define(function(require) {
 		var h = $('.account-type.formData-inner')[0].scrollHeight;
 		$('#showPdf-agree').css('minHeight',h+1);
 		var readPdf = {
-			goldNext:false,
-			diamondNext:false
+			goldNext:true,
+			diamondNext:true
 		};
 		var E = {
 			openPdf:function(){
@@ -121,36 +121,7 @@ define(function(require) {
 
 		$("#accountType-next").off().on("click", function() {
 			if ($("#diamondCard").hasClass("checked") == true || $("#goldCard").hasClass("checked") == true) {
-
-				var accountType;
-				// 保存卡信息
-				var selectCardArr = $(".agree-term").find('button');
-				for(var i = 0; i < selectCardArr.length; i++){
-					if(true == $(selectCardArr[i]).hasClass("checked")){
-						accountType=$(selectCardArr[i]).attr("data-type");
-						model.appModel('accountType',accountType);
-						break;
-						//alert(model.accountType);
-					}
-				}
-
-
-				if(applyDataModel.customer && applyDataModel.customer.customerSession){
-
-					$$.debug("准备发送HFE数据."+applyDataModel.customer.customerSession.residentAddress);
-					$$.debug(controller.getActionMessage("HFE", {customerSession: applyDataModel.customer.customerSession, accountType: accountType}));
-
-					//向VTA发送数据
-					ESpaceMediaTerminal.mediaTerminalSendMsg("HFE", {customerSession: applyDataModel.customer.customerSession, accountType: accountType}).then(function(){
-
-					},function(error){
-						throw new Error(error);
-					});
-				}else{
-					$$.debug("未获取到HFE数据，请检查Customer session code.");
-				}
-
-				router.gotoView("triggerWait");
+				router.gotoView("applyData");
 			}
 		});
 	}
@@ -159,10 +130,6 @@ define(function(require) {
 		$(".formData").empty();
 		controller.statusStep(4,1);
 		$('#js-exit').hide();
-		model.appModel('accountType','');
-		var transactionId = model.appModel('transaction').transactionId;
-		controller.transactionMonitor(model.monitor,transactionId);
-
 	}
 
 	return {

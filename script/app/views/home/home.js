@@ -3,6 +3,7 @@ define(function (require) {
     var $ = require('jquery'),
         $$ = require('app/util/util'),
         router = require('app/util/router'),
+        dialog = require('../dialog/dialog'),
         model = require('./home.model'),
         template = require('text!./home.template.html'),
         controller = require('./home.controller');
@@ -62,7 +63,7 @@ define(function (require) {
      * 视图初始化
      */
     function run() {
-
+        dialog.load();
     }
 
     return {

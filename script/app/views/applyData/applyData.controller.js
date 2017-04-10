@@ -2,7 +2,7 @@
  * @model applyData控制器
  * @class applyData控制器
  */
-define(['../baseController', './applyData.model', 'app/util/router', 'app/service/applyDataService', 'app/xfs/xfsUtil', 'app/util/util', 'app/util/message', 'jquery', 'app/xfs/ESpaceMediaTerminal'], function (Base, model, router, applyDataService, xfsUtil, $$, message, $, Terminal) {
+define(['../baseController', './applyData.model', 'app/util/router', 'app/xfs/xfsUtil', 'app/util/util', 'app/util/message', 'jquery', 'app/xfs/ESpaceMediaTerminal'], function (Base, model, router, xfsUtil, $$, message, $, Terminal) {
     var controller = new Base('applyData controller'),
         IDCInfo = model.appModel('IDCInfo') || {
                 Address: '西安市碑林区雁塔路',
@@ -292,7 +292,7 @@ define(['../baseController', './applyData.model', 'app/util/router', 'app/servic
      * @param {Array} keyAndValue
      * @returns {json}
      */
-    controller.saveCustomerSession = applyDataService.saveCustomerSession;
+    //controller.saveCustomerSession = applyDataService.saveCustomerSession;
 
     /**
      * 读取预填数据
@@ -300,6 +300,9 @@ define(['../baseController', './applyData.model', 'app/util/router', 'app/servic
     controller.readAheadData = function () {
         var self = this;
         $('#resident').text(idCardAddress);//硬件读取身份证后的信息
+        /* poc.start */
+        return false;
+        /* poc.end */
         applyDataService.readAheadData(IDCInfo).then(function (data) {
             if (data.id == null) {
                 $$.debug("新申请用户,没有预填信息");

@@ -1,6 +1,6 @@
 define(function (require) {
     var $ = require('jquery'),
-        router = require('app/util/router'),//poc
+        router = require('app/util/router'),
         model = require('./applyData.model'),
         template = require('text!./applyData.template.html'),
         controller = require('./applyData.controller'),
@@ -8,7 +8,6 @@ define(function (require) {
         //poc  dialog = require('../dialog/dialog');
         require('jquery.validationEngine-en');
         require('jquery.validationEngine');
-        //poc  require('inputOCX');
         require('ChineseDistricts');
         require('city-picker');
 
@@ -38,7 +37,7 @@ define(function (require) {
 
         function applyDataform() {
             /* poc.start */
-            router.gotoView('documents');
+            router.gotoView('accountAgreement');
             return false;
             /* poc.end */
             $("#applyData-form").submit();
@@ -103,33 +102,6 @@ define(function (require) {
 
         $('#js-birth-country').hide();
         $('#correspondence-address-details').hide();
-
-        //调用输入法
-        /* poc
-        $('#mobileNumber').inputOCX({
-            lInputMode: 'phone_number'
-        });
-        $('#email').inputOCX({
-            lInputMode: 'english'
-        });
-        $('#correspondenceAddressDetails').inputOCX({
-            lInputMode: 'pinyin'
-        });
-        $('#employerName').inputOCX({
-            lInputMode: 'pinyin'
-        });
-
-        $('#postalCode').inputOCX({
-            lInputMode: 'phone_number'
-        });
-
-        $('#correspondenceAddressDetails').inputOCX({
-            lInputMode: 'pinyin'
-        });
-
-        $('#communicationCode').inputOCX({
-            lInputMode: 'phone_number'
-        });*/
 
         //select option
         controller.inputAlert($('.form-group[data-for]'));

@@ -32,11 +32,12 @@ define(function (require) {
     function bind() {
 
         var connectedTimer = setTimeout(function(){
-            kindlyController.sendMsgToTellerAsync().then(function(){
+            router.gotoView("accountType");
+           /* kindlyController.sendMsgToTellerAsync().then(function(){
                 router.gotoView("triggerWait");
                 clearTimeout(connectedTimer);
-            });
-        },5000);
+            });*/
+        }, 3000);
     }
 
     function run() {

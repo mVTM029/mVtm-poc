@@ -72,7 +72,7 @@ define(function (require) {
                 $("#top-select-language li").removeClass("active");
         },
         next: function () {
-            router.gotoView('accountAgreement');
+            router.gotoView('scanId');
            // router.gotoView('applyData');
         },
         exit: function () {

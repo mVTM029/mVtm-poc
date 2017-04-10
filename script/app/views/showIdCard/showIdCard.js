@@ -42,7 +42,7 @@ define(function (require) {
 
         $("#showIdCard-next").off().on("click", function () {
             /* poc.start */
-            router.gotoView('applyData');
+            router.gotoView('takeIdCard');
             return false;
             /* poc.end */
 

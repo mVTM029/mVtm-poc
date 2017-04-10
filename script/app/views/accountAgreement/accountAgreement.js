@@ -47,7 +47,7 @@ define(function (require) {
 	var handles = {
 		nextStep: function () {
 			if ($(".no-check").hasClass("checked")) {
-				router.gotoView('scanId');
+				router.gotoView('faceToface');
 			}
 		},
 		agree: function () {
