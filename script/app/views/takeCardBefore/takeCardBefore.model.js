@@ -27,19 +27,5 @@ define(['../baseModel'], function (Base) {
         }
     };
 
-    model.monitor = {
-        step:'takeCardBefore',//步骤
-        systemType:'VTM',//系统类型
-        operations:[
-            {
-                eventType:'event',
-                monitorSource:'takeCardBefore-next',
-                action:'click',
-                target:'goToTakeCard',
-                description:'go to take card page'
-            }
-        ]
-    };
-
     return model;
 });

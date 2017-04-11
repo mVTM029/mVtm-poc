@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/*fingerprintCollection*/
+.fingerprint-collection{text-align:center;margin:100px 0 100px 0;}
+.fingerprint-collection img{margin: 0 auto;}
+.fingerpring-title{width: 100%;text-align: center;color: #333;padding-top: 20px;}
+.fingerpring-title .take-paper {font-size: 35px;line-height: 54px;font-weight: 600;}

@@ -23,19 +23,5 @@ define(['../baseModel'], function (Base) {
 		}
 	};
 
-	model.monitor = {
-		step:'mobileBanking',//步骤
-		systemType:'VTM',//系统类型
-		operations:[
-			{
-				eventType:'event',
-				monitorSource:'mobileBanking-next',
-				action:'click',
-				target:'goToRateExperience',
-				description:'go to rate experience'
-			}
-		]
-	};
-
 	return model;
 });

@@ -6,7 +6,7 @@ define(['../baseModel'], function (Base) {
 				'Reminder':'Reminder: Your conversation will be recorded.',
 				'protect':'To protect your privacy, please pick up the handset or plug in your',
 				'headphone':'headphone to the ear jack slot before the conversation begin ',
-				'next': 'Next',
+				'next': 'Continue',
 				'Cancel':'Cancel'
 			},
 			'zh': {

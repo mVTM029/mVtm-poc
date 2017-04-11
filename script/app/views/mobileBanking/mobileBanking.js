@@ -29,7 +29,7 @@ define(function(require) {
 	 */
 	function bind() {
 		$("#mobileBanking-next").off().on("click", function() {
-			// location.hash = "displayWeChat";
+
 			router.gotoView("rateExperience");
 		});
 	}
@@ -37,8 +37,6 @@ define(function(require) {
 	function run() {
 		$("#js-exit").hide();
 		$(".main-padding").scrollTop(0);
-		var transactionId = model.appModel('transaction').transactionId;
-		controller.transactionMonitor(model.monitor,transactionId);
 	}
 
 	return {

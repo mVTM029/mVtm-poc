@@ -37,8 +37,7 @@ define(function (require) {
 	function run() {
 		$("#js-exit").show().removeClass('only-exit');
 		controller.statusStep(4,4);
-		var transactionId = model.appModel('transaction').transactionId;
-		controller.transactionMonitor(model.monitor,transactionId);
+		$('.main-padding').removeClass('animation-bgc');
 	}
 
 	return {

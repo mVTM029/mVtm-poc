@@ -1,4 +1,4 @@
-define(['../baseController','app/util/util','app/xfs/PinPad','jquery','app/xfs/xfsUtil','app/views/dialog/dialog','app/util/router'], function (Base, $$,PinPad,$,xfsUtil,dialog,router) {
+define(['../baseController','app/util/util','jquery','app/views/dialog/dialog','app/util/router'], function (Base, $$,$,dialog,router) {
     var controller = new Base('enterPassword controller');
 
     return controller;

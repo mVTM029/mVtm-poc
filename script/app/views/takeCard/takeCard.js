@@ -29,17 +29,14 @@ define(function (require) {
 	 */
 	function bind() {
 		$("#takeCard-next").on("click",function(){
-			router.gotoView("electronBanking");
+			router.gotoView("mobileBanking");
 		});
 	}
 
 	function run() {
 		$("#js-exit").hide();
-		controller.AsyncEjectCard();
 		$('.main-padding').scrollTop(0);
 		controller.processVideo();
-		var transactionId = model.appModel('transaction').transactionId;
-		controller.transactionMonitor(model.monitor,transactionId);
 	}
 
 	return {
