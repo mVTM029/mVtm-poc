@@ -54,6 +54,9 @@ define(function (require) {
 
 		//发起链接视频
 		$("#select-language-next").off().on("click", function () {
+			if ($(this).hasClass('disabled')) {
+				return;
+			}
 			router.gotoView("forceConnectingTeller");
 		});
 
