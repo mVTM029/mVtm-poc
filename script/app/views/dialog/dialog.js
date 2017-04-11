@@ -87,7 +87,7 @@ define(function (require) {
      * 事件绑定
      */
     function bind() {
-        $.getJSON("../script/app/views/dialog/time.json", function (data) {
+        $.getJSON("./script/app/views/dialog/time.json", function (data) {
             resTimer = data.timer * 60 - 120;
         });
 
