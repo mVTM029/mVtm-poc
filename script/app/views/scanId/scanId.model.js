@@ -1,6 +1,5 @@
 define(['../baseModel'], function (Base) {
 	var model = new Base('scanId');
-	model.appModel(model.getTitle(), model);
 
 	model.locale = {
 		'en': {

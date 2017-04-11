@@ -40,7 +40,6 @@ define(function (require) {
 		//poc  $('#js-exit').addClass('only-exit');
 		controller.processVideo();
 		controller.statusStep(1, 3);
-		controller.scan();
 	}
 
 	return {

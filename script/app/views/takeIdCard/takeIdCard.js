@@ -5,9 +5,7 @@ define(function (require) {
 		model = require('./takeIdCard.model'),
 		template = require('text!./takeIdCard.template.html'),
 		controller = require('./takeIdCard.controller'),
-		xfsUtil = require('app/xfs/xfsUtil'),
-		$$ = require('app/util/util'),
-		IDCardReader = require('app/xfs/IDCardReader');
+		$$ = require('app/util/util');
 
 	/**
 	 * 对外暴露函数，用于视图加载
@@ -40,12 +38,6 @@ define(function (require) {
 		};
 
 		$("#takeIdCard-next").off().on("click", function () {
-			//router.gotoView('showIdCard');
-			/*if (Terminal.terminalInfo.callStatus !== -1) {
-				kindlyController.sendMsgToTellerAsync();
-				router.gotoView("triggerWait");
-				return;
-			}*/
 
 			dialog.layerShow('#spoken-language');
 
@@ -62,25 +54,12 @@ define(function (require) {
 
 		//发起链接视频
 		$("#select-language-next").off().on("click", function () {
-			/* poc */
 			router.gotoView("forceConnectingTeller");
-			/* poc */
-
-			if ($("#select-language-next").hasClass('disabled')) {
-				return;
-			}
-
-			if (Terminal.terminalInfo.callStatus === -1) {
-				var language = model.appModel("showIdCardlanguage");
-				controller.mediaTerminalCall(language);
-			} else {
-				router.gotoView("triggerWait");
-			}
 		});
 
 		controller.leavePage(function () {
-			dialog.layerHide("#spoken-language")
-		})
+			dialog.layerHide("#spoken-language");
+		});
 	}
 
 	function run() {

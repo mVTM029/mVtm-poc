@@ -87,6 +87,20 @@ define(['jquery', 'app/util/util','app/util/router'], function ($, $$, router) {
             }
 
             window.addEventListener("hashchange", _leave, false);
+        },
+
+        /**
+         * 有视频的模块调用此方法
+         */
+        processVideo: function () {
+            var video = document.getElementsByTagName('video');
+            for (var i = 0, len = video.length; i < len; i++) {
+                var v = video[i];
+                v.addEventListener('canplay', function () {
+                    v.play();
+                    v.style.visibility = 'visible'
+                }, false);
+            }
         }
 
     };
