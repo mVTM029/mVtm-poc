@@ -127,7 +127,7 @@ define(function(require) {
 
 	function run() {
 		$(".formData").empty();
-		controller.statusStep(4,1);
+		controller.statusStep(3,1);
 		$('#js-exit').hide();
 	}
 

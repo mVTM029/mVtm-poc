@@ -93,9 +93,8 @@ define(function (require) {
      * 页面初始化
      */
     function run() {
-        controller.statusStep(3, 1);
-        //poc  var transactionId = model.appModel('transaction').transactionId;
-        //poc  controller.transactionMonitor(model.monitor,transactionId);
+        controller.statusStep(3, 2);
+
         $(".formData").show();
         $("#view-part-container").empty();
         $('#js-exit').hide();

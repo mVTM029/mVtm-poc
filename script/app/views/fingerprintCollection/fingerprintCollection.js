@@ -46,7 +46,7 @@ define(function (require) {
     }
 
     function run() {
-        controller.statusStep(1,3);
+        //controller.statusStep(1,2);
         $('#js-exit').hide();
         $('#fingerprintCollection-next').show();
 

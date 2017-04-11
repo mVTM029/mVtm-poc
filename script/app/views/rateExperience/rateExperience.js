@@ -56,8 +56,6 @@ define(function(require) {
 		controller.statusStep(5);
 		$('.main-padding').scrollTop(0);
 		$('#js-exit').hide();
-		var transactionId = model.appModel('transaction').transactionId;
-		controller.transactionMonitor(model.monitor,transactionId);
 	}
 
 	return {

@@ -15,19 +15,5 @@ define(['../baseModel'], function (Base) {
 			}
 	};
 
-	model.monitor = {
-		step:'rateExperience',//步骤
-		systemType:'VTM',//系统类型
-		operations:[
-			{
-				eventType:'event',
-				monitorSource:'rate-confirm',
-				action:'click',
-				target:'goToHomeFromRateExperience',
-				description:'go to home from Rate Experience'
-			}
-		]
-	};
-
     return model;
 });

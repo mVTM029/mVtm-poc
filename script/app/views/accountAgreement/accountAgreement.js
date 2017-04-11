@@ -54,7 +54,7 @@ define(function (require) {
 	 * 视图初始化操作
 	 */
 	function run() {
-		controller.statusStep(1, 2);
+		controller.statusStep(4, 1);
 		$(".formData").empty();
 		$('#js-exit').hide();
 		$('#js-exit').removeClass('only-exit');

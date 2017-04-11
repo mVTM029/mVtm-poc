@@ -39,7 +39,7 @@ define(function (require) {
 		//poc  $('#scanId-next').hide();
 		//poc  $('#js-exit').addClass('only-exit');
 		controller.processVideo();
-		controller.statusStep(1, 3);
+		controller.statusStep(1, 2);
 	}
 
 	return {

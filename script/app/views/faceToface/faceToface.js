@@ -43,6 +43,7 @@ define(function(require) {
 		}
 	};
 	function run() {
+		controller.statusStep(4, 2);
 		$('#js-exit').hide();
 		$(".formData").empty();
 		$(".formData,.slimScrollDiv").hide();

@@ -37,6 +37,7 @@ define(function(require) {
 	function run() {
 		$("#js-exit").hide();
 		$(".main-padding").scrollTop(0);
+		controller.statusStep(5);
 	}
 
 	return {
