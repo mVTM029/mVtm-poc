@@ -43,7 +43,7 @@ define(function(require) {
 		}
 	};
 	function run() {
-		$('#js-exit').show();
+		$('#js-exit').hide();
 		$(".formData").empty();
 		$(".formData,.slimScrollDiv").hide();
 	}

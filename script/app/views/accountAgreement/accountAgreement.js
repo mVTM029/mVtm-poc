@@ -56,7 +56,7 @@ define(function (require) {
 	function run() {
 		controller.statusStep(1, 2);
 		$(".formData").empty();
-		$('#js-exit').show();
+		$('#js-exit').hide();
 		$('#js-exit').removeClass('only-exit');
 		$(".formData,.slimScrollDiv").hide();
 		$("#top-select-language").hide();
