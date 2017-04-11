@@ -214,7 +214,10 @@ define(function (require) {
         t = controller.dialogTimer.dialogTimer30;
         clearInterval(timerFirst);
 
-        var isTimeOutPage = location.hash.isContain("#kindly") || location.hash.isContain("#accountAgreement") || location.hash.isContain("#scanId") || location.hash.isContain("#takeIdCard") || location.hash.isContain("#showIdCard") || location.hash.isContain("#forceConnectingTeller") || location.hash.isContain("#takeCard") || location.hash.isContain("#takeCardBefore") || location.hash.isContain("#takeToken") || location.hash.isContain("#tokenDemandChoice") || location.hash.isContain("#rateExperience");
+        //var isTimeOutPage = location.hash.isContain("#kindly") || location.hash.isContain("#accountAgreement") || location.hash.isContain("#scanId") || location.hash.isContain("#takeIdCard") || location.hash.isContain("#showIdCard") || location.hash.isContain("#forceConnectingTeller") || location.hash.isContain("#takeCard") || location.hash.isContain("#takeCardBefore") || location.hash.isContain("#takeToken") || location.hash.isContain("#tokenDemandChoice") || location.hash.isContain("#rateExperience");
+
+        //poc 取消超时操作
+        var isTimeOutPage = false;
 
         if (isTimeOutPage) {
             timerFirst = setInterval(function () {
