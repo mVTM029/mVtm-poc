@@ -28,16 +28,7 @@ define(function (require) {
 	 */
 	function bind() {
 		$(".agree-term").off("click", handles.agree).on("click", handles.agree);
-		//点击每个pdf文件展示图片
-		$('.tnc-content').on('click', function () {
-			controller.showPdfImage($(this).attr('data-read', 'true').data('pdf'),controller.getLocale());
-		});
-		$("#closePdf").on('click', function () {
-			$(this).hide().parent().hide();
-			if ($('.tnc-content').length === $('.tnc-content[data-read=true]').length) {
-				$('#agreeSpan').hide();
-			}
-		});
+
 		$("#accountAgreement-next").off("click", handles.nextStep).on("click", handles.nextStep);
 	}
 
@@ -52,21 +43,10 @@ define(function (require) {
 		},
 		agree: function () {
 			var checkbox = $(this).find('.no-check');
-			/* poc.start */
+
 			checkbox.toggleClass("checked");
 			$('#accountAgreement-next').toggleClass('disabled');
 			$('#agreeSpan').hide();
-			return false;
-			/* poc.end */
-
-			//pdf全部点击之后才可以更改复选框
-			if ($('.tnc-content').length === $('.tnc-content[data-read=true]').length) {
-				checkbox.toggleClass("checked");
-				$('#accountAgreement-next').toggleClass('disabled');
-				$('#agreeSpan').hide();
-			}else{
-				$('#agreeSpan').show();
-			}
 		}
 	}
 
@@ -82,8 +62,6 @@ define(function (require) {
 		$("#top-select-language").hide();
 		$("#agree-terms").removeClass("active");
 
-		//poc  var transactionId = model.appModel('transaction').transactionId;
-		//poc  controller.transactionMonitor(model.monitor,transactionId);
 	}
 
 	return {

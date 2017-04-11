@@ -5,7 +5,7 @@ define(function (require) {
         template = require('text!./applyData.template.html'),
         controller = require('./applyData.controller'),
         $$ = require('app/util/util');
-        //poc  dialog = require('../dialog/dialog');
+        dialog = require('../dialog/dialog');
         require('jquery.validationEngine-en');
         require('jquery.validationEngine');
         require('ChineseDistricts');
@@ -57,7 +57,7 @@ define(function (require) {
         });
 
         $("#js-apply-data-exit").off().on("click", function () {
-            //poc  dialog.layerShow("#backhome-dialog");
+            dialog.layerShow("#backhome-dialog");
         });
 
         $('#anotherAddress input').click(function () {

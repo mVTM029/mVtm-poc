@@ -2,7 +2,7 @@
  * @model applyData控制器
  * @class applyData控制器
  */
-define(['../baseController', './applyData.model', 'app/util/router', 'app/xfs/xfsUtil', 'app/util/util', 'app/util/message', 'jquery', 'app/xfs/ESpaceMediaTerminal'], function (Base, model, router, xfsUtil, $$, message, $, Terminal) {
+define(['../baseController', './applyData.model', 'app/util/router', 'app/util/util', 'jquery'], function (Base, model, router, $$, $, message) {
     var controller = new Base('applyData controller'),
         IDCInfo = model.appModel('IDCInfo') || {
                 Address: '西安市碑林区雁塔路',
@@ -256,7 +256,6 @@ define(['../baseController', './applyData.model', 'app/util/router', 'app/xfs/xf
                 }
             });
 
-            Terminal.mediaTerminalSendMsg("OCD", sendObjArray);
 
         } else {
             $$.debug("未获取到HFE数据，请检查Customer session code.");

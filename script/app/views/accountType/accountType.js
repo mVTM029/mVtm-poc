@@ -5,7 +5,6 @@ define(function(require) {
 		template = require('text!./accountType.template.html'),
 		controller = require('./accountType.controller'),
 		router = require('app/util/router'),
-		ESpaceMediaTerminal = require('app/xfs/ESpaceMediaTerminal'),
 		applyDataModel = require("../applyData/applyData.model");
 
 	/**
