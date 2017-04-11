@@ -6,9 +6,6 @@ define(function (require) {
         model = require('./dialog.model'),
         template = require('text!./dialog.template.html'),
         controller = require('./dialog.controller'),
-        Terminal = require('app/xfs/ESpaceMediaTerminal'),
-        //kindlyController = require('app/views/kindly/kindly.controller'),
-        showIdCardController = require('app/views/showIdCard/showIdCard.controller'),
         i = 0,
         t = 30,
         timerFirst = null,
@@ -160,21 +157,6 @@ define(function (require) {
 
         },
         retry: function () {
-            Terminal.mediaTerminalCallAsync()
-                .then(function (p) {
-                    //p[0]为resolve参数中Promise对象data非Promise对象
-                    return p[0];
-                }, function (msg) {
-                    $$.debug('openCameraFail:' + msg);
-                })
-                .then(function () {
-                    $("#top-remote-wait").hide();
-                    $("#js-remote").hide();
-                    $("#js-remote-calling").show();
-                    $("#top-remote-defaule").hide();
-
-                })
-            ;
             $("#top-select-language").hide();
             $("#top-remote-wait").show();
         },
@@ -184,7 +166,6 @@ define(function (require) {
         connectingCancel: function () {
 
             var language = model.appModel("showIdCardlanguage");
-            Terminal.mediaTerminalReleaseCallAsync();
             // clearInterval(forceTime);
             if (location.hash.isContain("forceConnectingTeller")) {
                 showIdCardController.mediaTerminalCall(language);
@@ -272,12 +253,6 @@ define(function (require) {
 
     }
 
-    //视频连接超时处理
-    Terminal.MediaAsyncCallBack.releaseCallSuccessEvent(function () {
-        if (Terminal.terminalInfo.callStatus != Terminal.callStatus.calling) {
-            layerShow('#noteller-dialog');
-        }
-    });
     function run() {
         init();
     }

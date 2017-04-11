@@ -6,14 +6,12 @@ define(function (require) {
         model = require('./kindly.model'),
         template = require('text!./kindly.template.html'),
         controller = require('./kindly.controller'),
-        dialog = require('../dialog/dialog'),
-        Terminal = require('app/xfs/ESpaceMediaTerminal');
+        dialog = require('../dialog/dialog');
 
     /**
      * 对外暴露函数，用于视图加载
      */
     var load = function () {
-        $$.debug('callStatus:'+Terminal.terminalInfo.callStatus);
         render();
         bind();
         run();
@@ -85,11 +83,7 @@ define(function (require) {
         },
         backhome: function () {
             dialog.layerHide("#backhome-dialog");
-            /*controller.wosa.IdcAsyncCancel();*/
-            Terminal.mediaTerminalReleaseCallAsync().then(function () {
-                Terminal.closeRemoteVideo();
-                Terminal.terminalInfo.callStatus = -1;
-            });
+
             $("#ui-frame").hide();
             $$.debug("调用backHome方法");
             router.gotoView('transactionCancel');
@@ -155,11 +149,6 @@ define(function (require) {
      * 视图初始化
      */
     function run() {
-        if(Terminal.terminalInfo.callStatus == 1){
-            $('#js-remote').addClass('hide');
-            $('#js-remote-calling').removeClass('hide');
-        }
-
         $(".view-container").removeClass("home-bg");
     }
 

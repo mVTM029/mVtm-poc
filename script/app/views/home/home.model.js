@@ -48,13 +48,6 @@ define(['../baseModel'], function (Base) {
                 target: 'openAccount',
                 description: 'Open Account Button'
             },
-            // {//test Data
-            //     eventType: 'event',
-            //     monitorSource: 'open-account-btn1',
-            //     action: 'click',
-            //     target: 'openAccount1',
-            //     description: 'Open Account Button1'
-            // }
         ]
     };
 
