@@ -12,6 +12,6 @@ define(['../baseModel'], function (Base) {
 				'Cancel':'取消'
 			}
 	};
-	model.appModel(model.getTitle(), model);
+
     return model;
 });

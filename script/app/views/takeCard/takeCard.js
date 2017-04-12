@@ -9,7 +9,6 @@ define(function (require) {
 	 * 对外暴露函数，用于视图加载
 	 */
 	var load = function () {
-		// $$.actionLog("Enter takeCard page");
 		render();
 		bind();
 		run();

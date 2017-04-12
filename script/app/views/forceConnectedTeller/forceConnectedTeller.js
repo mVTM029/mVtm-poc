@@ -1,8 +1,7 @@
 define(function (require) {
     var $ = require('jquery'),
-        model = require('./forceConnectedTeller.model'),
         router = require('app/util/router'),
-        kindlyController = require('app/views/kindly/kindly.controller'),
+        model = require('./forceConnectedTeller.model'),
         template = require('text!./forceConnectedTeller.template.html'),
         controller = require('./forceConnectedTeller.controller');
 

@@ -1,6 +1,5 @@
 define(function (require) {
 	var $ = require('jquery'),
-		//$$ = require('app/util/util'),
 		model = require('./takeCardBefore.model'),
 		template = require('text!./takeCardBefore.template.html'),
 		router = require('app/util/router'),
@@ -10,7 +9,6 @@ define(function (require) {
 	 * 对外暴露函数，用于视图加载
 	 */
 	var load = function () {
-		// $$.actionLog("Enter takeCardBefore page");
 		render();
 		bind();
 		run();

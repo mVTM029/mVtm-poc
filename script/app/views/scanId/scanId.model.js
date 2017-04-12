@@ -14,22 +14,6 @@ define(['../baseModel'], function (Base) {
 		}
 	};
 
-	model.monitor = {
-		step:'scanId',
-		systemType:'VTM',
-		operations:[
-			{
-				unique:'xfs',
-				eventType:'window',
-				monitorSource:'IDCardReaderAsyncReadRawDataCallBack',
-				action:'Insert',
-				target:'insertIdCard',
-				description:'Insert the ID card',
-				judgeEvent:'WFS_EXEE_IDC_MEDIAINSERTED'
-			}
-		]
-	};
-
 
 	return model;
 });

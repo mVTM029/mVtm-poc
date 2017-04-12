@@ -118,22 +118,7 @@ define(['../baseModel'], function (Base) {
 			}
 	};
 
-	model.monitor = {
-		step:'applyData',//步骤
-		systemType:'VTM',//系统类型
-		operations:[
-			{
-				unique:'confirmData',
-				eventType:'event',
-				monitorSource:'applyData-next',
-				action:'click',
-				target:'',
-				description:''
-			}
-		]
-	};
 
-	model.appModel(model.getTitle(), model);
 
     return model;
 });

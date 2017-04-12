@@ -4,8 +4,7 @@ define(function(require) {
 		model = require('./accountType.model'),
 		template = require('text!./accountType.template.html'),
 		controller = require('./accountType.controller'),
-		router = require('app/util/router'),
-		applyDataModel = require("../applyData/applyData.model");
+		router = require('app/util/router');
 
 	/**
 	 * 对外暴露函数，用于视图加载

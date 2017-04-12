@@ -1,6 +1,6 @@
 define(['../baseModel'], function (Base) {
 	var model = new Base('accountType');
-	model.appModel(model.getTitle(), model);
+
 	model.locale = {
 		'en': {
 			'Select': 'Select account type',
@@ -54,50 +54,6 @@ define(['../baseModel'], function (Base) {
 		}
 	};
 
-	model.monitor = {
-		step:'accountType',//步骤
-		systemType:'VTM',//系统类型
-		operations:[
-			{
-				eventType:'event',
-				monitorSource:'goldTerms',
-				action:'click',
-				target:'openGoldCardPdf',
-				description:'open gold card pdf'
-			},
-			{
-				eventType:'event',
-				monitorSource:'premierTerms',
-				action:'click',
-				target:'openPremierCardPdf',
-				description:'open premier card pdf'
-			},
-			{
-				unique:'checkbox',
-				eventType:'event',
-				monitorSource:'agree-term-gold',
-				action:'click',
-				target:'',
-				description:'Gold Button'
-			},
-			{
-				unique:'checkbox',
-				eventType:'event',
-				monitorSource:'agree-term-diamond',
-				action:'click',
-				target:'',
-				description:'Diamond Button'
-			},
-			{
-				unique:'continueButton',
-				eventType:'event',
-				monitorSource:'accountType-next',
-				action:'click',
-				target:'Done',
-				description:'staff decide card pdf'
-			}
-		]
-	};
 
 	return model;
 });

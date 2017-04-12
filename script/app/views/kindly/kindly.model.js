@@ -123,39 +123,7 @@ define(['../baseModel'], function (Base) {
         }
     };
 
-    model.monitor = {
-        step:'kindly',//步骤
-        systemType:'VTM',//系统类型
-        operations:[
-            {
-                eventType:'window',//如果eventType是window，和华为有关系或硬件
-                unique:'espace',//则unique必有值，espace(华为)或xfs(硬件)回调
-                monitorSource:'TerminalTalkingEvent',//window上绑定的回调事件名称
-                action:'connected',//操作
-                target:null,//目标为null是为了给后台放值
-                description:'connected',//描述
-                judgeEvent:'TerminalTalkingEvent'//espace(华为情况下判断条件特殊处理)
-            },
-            {
-                eventType:'event',
-                monitorSource:'kindly-next',
-                action:'click',
-                target:'goToAccountAgreement',
-                description:'go to Account Agreement'
-            },
-            {//绑定一次全局通用
-                unique:'exit',
-                eventType:'event',
-                monitorSource:'backhome-confirm',
-                action:'click',
-                target:'exit',
-                description:'Click Exit Button'
-            }
-        ]
-    };
 
-    model.terminalInfo = {};
-    model.remotelanguage = "";
-    model.appModel(model.getTitle(), model);
+
     return model;
 });

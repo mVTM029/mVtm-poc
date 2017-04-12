@@ -1,4 +1,4 @@
-define(['../baseController','app/util/util','jquery','app/views/dialog/dialog','app/util/router'], function (Base, $$,$,dialog,router) {
+define(['../baseController'], function (Base) {
     var controller = new Base('enterPassword controller');
 
     return controller;

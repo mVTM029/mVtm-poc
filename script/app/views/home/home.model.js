@@ -37,21 +37,5 @@ define(['../baseModel'], function (Base) {
         }
     };
 
-    model.monitor = {
-        step: 'home',
-        systemType: 'VTM',
-        operations: [
-            {
-                eventType: 'event',
-                monitorSource: 'open-account-btn',
-                action: 'click',
-                target: 'openAccount',
-                description: 'Open Account Button'
-            },
-        ]
-    };
-
-    model.BIZ_TYPE = "";
-    model.appModel(model.getTitle(), model);
     return model;
 });

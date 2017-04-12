@@ -29,15 +29,6 @@ define(function (require) {
      * 事件绑定
      */
     function bind() {
-
-        var E = {
-            cancelDialog: function () {
-                dialog.layerHide('#spoken-language');
-                $('.select-btn input:checked').prop('checked', false);
-            }
-        };
-
-
         $("#showIdCard-next").off().on("click", function () {
             router.gotoView('takeIdCard');
         });

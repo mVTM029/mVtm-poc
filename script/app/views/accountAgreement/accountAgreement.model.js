@@ -22,49 +22,7 @@ define([ '../baseModel' ], function(Base) {
 
 	};
 
-	model.monitor = {
-		step:'accountAgreement',//步骤
-		systemType:'VTM',//系统类型
-		operations:[
-			{
-				eventType:'event',
-				monitorSource:'generalPdf',
-				action:'click',
-				target:'openGeneralPdf',
-				description:'open General Terms and Conditions PDF'
-			},
-			{
-				eventType:'event',
-				monitorSource:'tariffPdf',
-				action:'click',
-				target:'openTariffPdf',
-				description:'open Tariff of Accounts and Service for Personal Customer PDF'
-			},
-			{
-				eventType:'event',
-				monitorSource:'debitPdf',
-				action:'click',
-				target:'openDebitPdf',
-				description:'open Debit Cards Terms and Conditions PDF'
-			},
-			{
-				unique:'checkbox',
-				eventType:'event',
-				monitorSource:'agree-term',
-				action:'click',
-				target:'',
-				description:'click account Agreement Check Box'
-			},
-			{
-				unique:'continueButton',
-				eventType:'event',
-				monitorSource:'accountAgreement-next',
-				action:'click',
-				target:'goToScanId',
-				description:'Continue Button(go to scanId page)'
-			}
-		]
-	};
+
 
 	return model;
 });

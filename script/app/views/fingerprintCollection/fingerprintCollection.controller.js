@@ -1,4 +1,4 @@
-define(['app/views/baseController','./fingerprintCollection.model', 'app/util/util','app/util/router', ], function (Base , model , $$ ,  Router) {
+define(['app/views/baseController'], function (Base) {
 
     var controller = new Base('fingerprintCollection controller');
 

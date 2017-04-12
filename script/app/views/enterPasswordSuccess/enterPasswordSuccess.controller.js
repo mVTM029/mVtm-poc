@@ -1,4 +1,4 @@
-define(['../BaseController', 'app/util/util'], function (Base, $$) {
+define(['../BaseController'], function (Base) {
 	var controller = new Base('enterPasswordSuccess controller');
 
 	
