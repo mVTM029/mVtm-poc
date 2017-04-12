@@ -20,7 +20,7 @@
 .home .match-condition li{float: left;width: 45%;margin-top: 20px;margin-left:5%;}
 .home .match-condition li:nth-child(even){width: 50%;margin-left:0;}
 .home .match-condition li i{float: left;display: block;width: 60px;height: 60px;}
-.home .match-condition li div{text-align:left;font-size: 20px;color: #fff; line-height:35px}
+.home .match-condition li div{text-align:left;font-size: 20px;color: #fff; line-height:3.5;}
 .home .match-condition li .addressSpan{width: 310px;line-height:30px !important;}
 .home .match-condition .card-ico{background: url(../img/home/card-ico.png) no-repeat;}
 .home .match-condition .address-ico{background: url(../img/home/address-ico.png) no-repeat;}
