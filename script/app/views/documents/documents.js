@@ -30,12 +30,13 @@ define(function (require) {
 	function bind() {
 		//poc
 		$("#documents-next").off().on("click", function () {
-			router.gotoView('documentsAgain');
+			//router.gotoView('documentsAgain');
+			router.gotoView('enterPassword');
 		});
 	}
 
 	function run() {
-		controller.statusStep(3, 2);
+		controller.statusStep(4, 3);
 		$("#js-exit").hide();
 		/* poc.start */
 

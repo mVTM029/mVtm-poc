@@ -36,7 +36,8 @@ define(function(require) {
 	 */
 	var E ={
 		Next:function(){
-			router.gotoView('enterPassword');
+			//router.gotoView('enterPassword');
+			router.gotoView('documents');
 		},
 		Exit:function(){
 			dialog.layerShow("#backhome-dialog");

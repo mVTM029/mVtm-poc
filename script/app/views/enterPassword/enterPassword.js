@@ -17,7 +17,8 @@ define(['jquery','./enterPassword.model','app/util/router','../dialog/dialog','t
         controller.setModel(model);
         controller.setTemplate(template);
         controller.render($('#view-part-container')[0]);
-        controller.statusStep(4, 3);
+        //controller.statusStep(4, 3);
+        controller.statusStep(4, 4);
     }
 
     /**

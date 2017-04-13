@@ -37,7 +37,8 @@ define(function (require) {
 		$("#enterAgainSuccess-next").removeClass("disabled").hide();
 		$('.form-condition').removeClass('animation-bgc');
 		setTimeout(function(){
-			location.hash = 'fingerprintCollection';
+			//location.hash = 'fingerprintCollection';
+			location.hash = 'takeCardBefore';
 		}, 2000);
 
 		

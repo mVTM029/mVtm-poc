@@ -34,7 +34,8 @@ define(function (require) {
 
 	function run() {
 		$("#js-exit").show().removeClass('only-exit');
-		controller.statusStep(4,4);
+		//controller.statusStep(4,4);
+		controller.statusStep(4,5);
 		$('.main-padding').removeClass('animation-bgc');
 	}
 
